@@ -1,0 +1,44 @@
+@font-face {
+  font-family: ArchivoNarrow;
+  src: url(../font/ArchivoNarrow-Regular.woff2);
+  font-family: Montserrat;
+  src: url(../font/Montserrat-Regular.ttf); }
+html p span {
+  font-family: ArchivoNarrow;
+  font-size: 1.5rem;
+  font-weight: 400; }
+
+.navbar {
+  background-color: rgba(20, 110, 166, 0);
+  text-align: center;
+  width: 100%; }
+  .navbar ul li {
+    color: #2b2b2b;
+    display: inline;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 300;
+    list-style: none;
+    padding: 1.5rem 1rem .5rem;
+    position: sticky; }
+    .navbar ul li a {
+      color: inherit; }
+
+.homepage {
+  color: #2b2b2b;
+  font-family: ArchivoNarrow; }
+  .homepage h1 {
+    color: inherit;
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 1rem 0 1rem;
+    text-align: center; }
+  .homepage h2 {
+    color: inherit;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
