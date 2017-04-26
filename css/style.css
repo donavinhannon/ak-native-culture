@@ -5,7 +5,7 @@
   src: url(../font/Montserrat-Regular.ttf); }
 html p span {
   font-family: ArchivoNarrow;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 400; }
 
 .navbar {
@@ -30,15 +30,30 @@ html p span {
   .homepage h1 {
     color: inherit;
     font-family: Montserrat;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 900;
     padding: 1rem 0 1rem;
     text-align: center; }
   .homepage h2 {
     color: inherit;
     font-family: Montserrat;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     text-align: center; }
+  .homepage html p span {
+    font-family: ArchivoNarrow;
+    font-size: 1.5rem;
+    font-weight: 400; }
+
+#past-events h2 {
+  color: inherit;
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center; }
+#past-events p span {
+  font-family: ArchivoNarrow;
+  font-size: 1.5rem;
+  font-weight: 400; }
 
 /*# sourceMappingURL=style.css.map */
