@@ -5,7 +5,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>Alaska Native Culture Camp - California</title>
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <div class="container-fluid homepage">
   <div class="row">
@@ -34,37 +34,65 @@
       <span>Octopus Bags</span><br>
       <span>Ceadar Bark Weaving (Red &amp; Yellow)</span>
     </div>
+
     <div class="col-md-8">
-      <div>
-
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#drums" aria-controls="home" role="tab" data-toggle="tab">Drums</a></li>
-          <li role="presentation"><a href="#paddles" aria-controls="profile" role="tab" data-toggle="tab">Paddles</a></li>
-          <li role="presentation"><a href="#beads" aria-controls="messages" role="tab" data-toggle="tab">Devil's Club Beads</a></li>
-          <li role="presentation"><a href="#bags" aria-controls="settings" role="tab" data-toggle="tab">Octopus Bags</a></li>
-          <li role="presentation"><a href="#weaving" aria-controls="settings" role="tab" data-toggle="tab">Ceadar Bark Weaving</a></li>
-        </ul>
-
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="drums">
-            <img src="" alt="">
-          </div>
-          <div role="tabpanel" class="tab-pane" id="paddles">...</div>
-          <div role="tabpanel" class="tab-pane" id="beads">...</div>
-          <div role="tabpanel" class="tab-pane" id="bags">...</div>
-          <div role="tabpanel" class="tab-pane" id="weaving">...</div>
+      <!-- Nav pills -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#drums" aria-controls="drum" role="tab" data-toggle="tab">Drums</a></li>
+        <li role="presentation"><a href="#paddles" aria-controls="paddles" role="tab" data-toggle="tab">Paddles</a></li>
+        <li role="presentation"><a href="#beads" aria-controls="beads" role="tab" data-toggle="tab">Devil's Club Beads</a></li>
+        <li role="presentation"><a href="#bags" aria-controls="bags" role="tab" data-toggle="tab">Octopus Bags</a></li>
+        <li role="presentation"><a href="#weaving" aria-controls="weaving" role="tab" data-toggle="tab">Ceadar Bark Weaving</a></li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="drums">
+          <span>DRUMS</span>
         </div>
-
+        <div role="tabpanel" class="tab-pane" id="paddles">...</div>
+        <div role="tabpanel" class="tab-pane" id="beads">...</div>
+        <div role="tabpanel" class="tab-pane" id="bags">...</div>
+        <div role="tabpanel" class="tab-pane" id="weaving">...</div>
       </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div>
+
+  <h2>Dynamic Pills</h2>
+    <p>To make the tabs toggleable, add the data-toggle="pill" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+    <ul class="nav nav-pills">
+      <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+      <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+      <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
+      <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
+    </ul>
+
+    <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     </div>
   </div>
 
 </div>
 
-<!-- javascript CDN's -->
+<!-- Javascript CDN's -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-</html>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

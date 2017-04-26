@@ -5,11 +5,11 @@
   src: url(../font/Montserrat-Regular.ttf); }
 html p span {
   font-family: ArchivoNarrow;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400; }
 
 .navbar {
-  background-color: rgba(20, 110, 166, 0);
+  background-color: rgba(20, 110, 166, 0.5);
   text-align: center;
   width: 100%; }
   .navbar ul li {

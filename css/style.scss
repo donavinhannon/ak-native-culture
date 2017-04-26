@@ -12,13 +12,13 @@ $main-font:ArchivoNarrow;
 
 html p span{
   font-family: $main-font;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
 // Navigation
 .navbar {
-  background-color: transparentize(#146ea6, 1);
+  background-color: transparentize(#146ea6, .5);
   text-align: center;
   width: 100%;
   ul li {
