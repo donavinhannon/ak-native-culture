@@ -61,6 +61,13 @@ html, body, p, span {
     font-size: 3rem;
     font-weight: 700;
     text-align: center; }
+  .homepage h3 {
+    color: inherit;
+    font-family: Montserrat;
+    font-size: 2.25rem;
+    font-weight: 500;
+    padding: 0;
+    text-align: left; }
   .homepage html p span {
     font-family: ArchivoNarrow !important;
     font-size: 1.5rem;
