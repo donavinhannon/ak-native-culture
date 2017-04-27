@@ -10,7 +10,7 @@ $home-header-color:#2b2b2b;
 $header-font:Montserrat;
 $main-font:ArchivoNarrow;
 
-html body p span{
+html, body, p, span {
   font-family: $main-font;
   font-size: 1.5rem;
   font-weight: 400;
@@ -39,13 +39,16 @@ html body p span{
 }
 
 .nav {
-  ul li {
+  li {
     a {
       font-family: $header-font;
     }
   }
 }
 
+.tab-pane {
+  font-family: $header-font;
+}
 // Homepage Headers
 .homepage {
   color: $home-header-color;
@@ -68,21 +71,6 @@ html body p span{
   }
   html p span{
     font-family: $main-font !important;
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
-}
-
-#past-events {
-  h2 {
-    color: inherit;
-    font-family: $header-font;
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
-  }
-  p span{
-    font-family: $main-font;
     font-size: 1.5rem;
     font-weight: 400;
   }

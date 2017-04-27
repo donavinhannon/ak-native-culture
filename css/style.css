@@ -3,7 +3,7 @@
   src: url(../font/ArchivoNarrow-Regular.woff2);
   font-family: Montserrat;
   src: url(../font/Montserrat-Regular.ttf); }
-html body p span {
+html, body, p, span {
   font-family: ArchivoNarrow;
   font-size: 1.5rem;
   font-weight: 400; }
@@ -26,7 +26,10 @@ html body p span {
     .top-menu ul li a {
       color: inherit; }
 
-.nav ul li a {
+.nav li a {
+  font-family: Montserrat; }
+
+.tab-pane {
   font-family: Montserrat; }
 
 .homepage {
@@ -50,16 +53,5 @@ html body p span {
     font-family: ArchivoNarrow !important;
     font-size: 1.5rem;
     font-weight: 400; }
-
-#past-events h2 {
-  color: inherit;
-  font-family: Montserrat;
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: center; }
-#past-events p span {
-  font-family: ArchivoNarrow;
-  font-size: 1.5rem;
-  font-weight: 400; }
 
 /*# sourceMappingURL=style.css.map */
