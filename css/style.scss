@@ -5,6 +5,22 @@
   src: url(../font/Montserrat-Regular.ttf);
 }
 
+@media all and (max-width: 768px) {
+    body{font-size: 12px;}
+}
+
+@media all and (max-width: 992px) {
+    body{font-size: 14px;}
+}
+
+@media all and (max-width: 1200px) {
+    body{font-size: 15px;}
+}
+
+@media all and (min-width: 1201px) {
+    body{font-size: 16px;}
+}
+
 // Variables
 $home-header-color:#2b2b2b;
 $header-font:Montserrat;
