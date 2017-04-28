@@ -5,31 +5,38 @@
   src: url(../font/Montserrat-Regular.ttf);
 }
 
-@media all and (max-width: 768px) {
-    body{font-size: 12px;}
-}
-
-@media all and (max-width: 992px) {
-    body{font-size: 14px;}
-}
-
-@media all and (max-width: 1200px) {
-    body{font-size: 15px;}
-}
-
-@media all and (min-width: 1201px) {
-    body{font-size: 16px;}
-}
-
 // Variables
 $home-header-color:#2b2b2b;
 $header-font:Montserrat;
 $main-font:ArchivoNarrow;
 
-html, body, p, span {
+@media all and (max-width: 768px) {
+    html{font-size: 12px;
+      font-family: $main-font;
+      font-weight: 300;}
+}
+
+@media all and (max-width: 992px) {
+    html{font-size: 14px;
+      font-family: $main-font;
+      font-weight: 300;}
+}
+
+@media all and (max-width: 1200px) {
+    html{font-size: 15px;
+      font-family: $main-font;
+      font-weight: 300;}
+}
+
+@media all and (min-width: 1201px) {
+    html{font-size: 16px;
+      font-family: $main-font;
+      font-weight: 300;}
+}
+
+body, p, span {
   font-family: $main-font;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 // Navigation - don't use .navbar
