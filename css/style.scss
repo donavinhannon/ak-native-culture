@@ -10,33 +10,44 @@ $home-header-color:#2b2b2b;
 $header-font:Montserrat;
 $main-font:ArchivoNarrow;
 
-@media all and (max-width: 768px) {
-    html{font-size: 12px;
-      font-family: $main-font;
-      font-weight: 300;}
+@media screen and (max-width:768px){
+  html{font-family:$main-font;font-size: 12px !important;}
+  h1{font-size: 2.5rem !important;}
+  h2{font-size: 1.7rem !important;}
+  h3{font-size: 1.5rem !important;}
+  body, p, span {font-size: 1rem !important;}
 }
-
-@media all and (max-width: 992px) {
-    html{font-size: 14px;
-      font-family: $main-font;
-      font-weight: 300;}
+@media screen and (min-width:768px){
+  html{font-family:$main-font;font-size: 14px !important;}
+  h1{font-size: 3.25rem !important;}
+  h2{font-size: 2.5rem !important;}
+  h3{font-size: 2rem !important;}
+  body, p, span {font-size: 1.25rem !important;}
 }
-
-@media all and (max-width: 1200px) {
-    html{font-size: 15px;
-      font-family: $main-font;
-      font-weight: 300;}
+@media screen and (min-width:992px){
+  html{font-family:$main-font;font-size: 15px !important;}
+  h1{font-size: 3.5rem !important;}
+  h2{font-size: 2.75rem !important;}
+  h3{font-size: 2.5rem !important;}
+  body, p, span {font-size: 1.5rem !important;}
 }
-
-@media all and (min-width: 1201px) {
-    html{font-size: 16px;
-      font-family: $main-font;
-      font-weight: 300;}
+@media screen and (min-width:1200){
+  html{font-family:$main-font;font-size: 16px !important;}
+  h1{font-size: 3.5rem !important;}
+  h2{font-size: 2.75rem !important;}
+  h3{font-size: 2.5rem !important;}
+  body, p, span {font-size: 1.5rem !important;}
 }
 
 body, p, span {
   font-family: $main-font;
+  font-size: 1.5rem;
   font-weight: 300;
+}
+
+.hidden-xs {
+  display:none !important;
+  visibility: hidden !important;
 }
 
 // Navigation - don't use .navbar
@@ -80,7 +91,6 @@ body, p, span {
   h1 {
     color: inherit;
     font-family: $header-font;
-    font-size: 4rem;
     font-weight:900;
     padding: 1rem 0 1rem;
     text-align: center;
@@ -88,13 +98,17 @@ body, p, span {
   h2 {
     color: inherit;
     font-family: $header-font;
-    font-size: 3rem;
     font-weight: 700;
     text-align: center;
   }
-  html p span{
-    font-family: $main-font !important;
-    font-size: 1.5rem;
+  h3 {
+    color: inherit;
+    font-family: $header-font;
     font-weight: 400;
+    text-align: center;
+  }
+  html, body, p, span{
+    font-family: $main-font;
+    font-weight: 300;
   }
 }
