@@ -45,11 +45,6 @@ body, p, span {
   font-weight: 300;
 }
 
-.hidden-xs {
-  display:none !important;
-  visibility: hidden !important;
-}
-
 // Navigation - don't use .navbar
 .top-menu {
   background-color: transparentize(#146ea6, .5);
