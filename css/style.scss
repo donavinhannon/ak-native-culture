@@ -6,9 +6,20 @@
 }
 
 // Variables
-$home-header-color:#2b2b2b;
-$header-font:Montserrat;
-$main-font:ArchivoNarrow;
+$dark-text: #2b2b2b;
+$header-font: Montserrat;
+$main-font: ArchivoNarrow;
+$main-font-size: 1.5rem;
+
+// @mixin header-font{
+//   font-family: Montserrat;
+//   font-weight: 700;
+// }
+//
+// @mixin main-font{
+//   font-family: ArchivoNarrow;
+//   font-weight: 300;
+// }
 
 @media screen and (max-width:768px){
   html{font-family:$main-font;font-size: 12px !important;}
@@ -39,12 +50,6 @@ $main-font:ArchivoNarrow;
   body, p, span {font-size: 1.5rem !important;}
 }
 
-body, p, span {
-  font-family: $main-font;
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
 // Navigation - don't use .navbar
 .top-menu {
   background-color: transparentize(#146ea6, .5);
@@ -53,10 +58,10 @@ body, p, span {
   text-align: center;
   width: 100%;
   ul li {
-    color: $home-header-color;
+    color: $dark-text;
     display: inline;
     font-family: $header-font;
-    font-size: 1.5rem;
+    font-size: $main-font-size;
     font-weight: 300;
     list-style: none;
     padding: 1.5rem 1rem .5rem;
@@ -67,12 +72,20 @@ body, p, span {
   }
 }
 
-.nav {
-  li {
-    a {
-      font-family: $header-font;
-    }
-  }
+.top-bg {
+  background-color: rgba(102,102,102,.25);
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#marketing-bg {
+  background-image: url(../img/digital-marketing-agency.jpg);
 }
 
 .tab-pane {
@@ -80,7 +93,7 @@ body, p, span {
 }
 // Homepage Headers
 .homepage {
-  color: $home-header-color;
+  color: $dark-text;
   font-family: $main-font;
   margin: 0;
   h1 {
