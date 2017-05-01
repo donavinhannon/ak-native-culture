@@ -127,6 +127,20 @@ body, p, span{font-weight: $bps-font-weight !important;}
 .tab-pane {
   font-family: $header-font;
 }
+
+#links {
+  a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+}
 // Homepage Headers
 .homepage {
   color: $dark-text;
