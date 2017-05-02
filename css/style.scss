@@ -5,45 +5,75 @@
   src: url(../font/Montserrat-Regular.ttf);
 }
 
-@media all and (max-width: 768px) {
-    body{font-size: 12px;}
-}
-
-@media all and (max-width: 992px) {
-    body{font-size: 14px;}
-}
-
-@media all and (max-width: 1200px) {
-    body{font-size: 15px;}
-}
-
-@media all and (min-width: 1201px) {
-    body{font-size: 16px;}
-}
-
 // Variables
-$home-header-color:#2b2b2b;
-$header-font:Montserrat;
-$main-font:ArchivoNarrow;
+$dark-text: #2b2b2b;
+$light-text: #fff;
+$header-font: Montserrat;
+$main-font: ArchivoNarrow;
+$main-font-size: 1.5rem;
+$title-shadow: 2px 2px 3px black;
+$h1-font-weight: 900;
+$h2-font-weight: 700;
+$h3-font-weight: 400;
+$bps-font-weight: 300;
 
-html, body, p, span {
-  font-family: $main-font;
-  font-size: 1.5rem;
-  font-weight: 400;
+// @mixin header-font{
+//   font-family: Montserrat;
+//   font-weight: 700;
+// }
+//
+// @mixin main-font{
+//   font-family: ArchivoNarrow;
+//   font-weight: 300;
+// }
+
+@media screen and (max-width:768px){
+  html{font-family:$main-font;font-size: 12px !important;}
+  h1{font-size: 2.5rem !important;}
+  h2{font-size: 1.7rem !important;}
+  h3{font-size: 1.5rem !important;}
+  body, p, span {font-size: 1rem !important;}
 }
+@media screen and (min-width:768px){
+  html{font-family:$main-font;font-size: 14px !important;}
+  h1{font-size: 3.5rem !important;}
+  h2{font-size: 2.5rem !important;}
+  h3{font-size: 2rem !important;}
+  body, p, span {font-size: 1.1rem !important;}
+}
+@media screen and (min-width:992px){
+  html{font-family:$main-font;font-size: 15px !important;}
+  h1{font-size: 4rem !important;}
+  h2{font-size: 2.75rem !important;}
+  h3{font-size: 2.5rem !important;}
+  body, p, span {font-size: 1.25rem !important;}
+}
+@media screen and (min-width:1200){
+  html{font-family:$main-font;font-size: 16px !important;}
+  h1{font-size: 4rem !important;}
+  h2{font-size: 2.75rem !important;}
+  h3{font-size: 2.5rem !important;}
+  body, p, span {font-size: 1.25rem !important;}
+}
+
+h1{font-weight: $h1-font-weight !important;}
+h2{font-weight: $h2-font-weight !important;}
+h3{font-weight: $h3-font-weight !important;}
+body, p, span{font-weight: $bps-font-weight !important;}
 
 // Navigation - don't use .navbar
 .top-menu {
-  background-color: transparentize(#146ea6, .5);
+  background-color: transparentize(#146ea6, 1);
+  color: $light-text;
   margin: 0;
   padding: 1rem 0 1rem;
   text-align: center;
   width: 100%;
   ul li {
-    color: $home-header-color;
+    // color: $dark-text;
     display: inline;
     font-family: $header-font;
-    font-size: 1.5rem;
+    font-size: $main-font-size;
     font-weight: 300;
     list-style: none;
     padding: 1.5rem 1rem .5rem;
@@ -54,26 +84,83 @@ html, body, p, span {
   }
 }
 
-.nav {
-  li {
-    a {
-      font-family: $header-font;
-    }
+.top-bg {
+  position: static;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#totem-bg {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../img/totems-bg-scaled.jpg);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  width: 100%;
+}
+
+.top-title {
+  color: $light-text;
+  h1 {
+    font-family: $header-font;
+    padding: 3rem 0 1rem;
+    text-align: center;
+    text-shadow: $title-shadow;
+  }
+  p {
+    font-family: $header-font;
+    padding:0 0 5rem;
+    text-align: center;
+    text-shadow: $title-shadow;
   }
 }
 
 .tab-pane {
   font-family: $header-font;
 }
+
+#links {
+  a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+}
+
+.bg-red {
+  background-color: #eccdca;
+}
+.bg-lgrey {
+  background-color: #f5f2f2;
+}
+
+.btn-danger {
+  color: #000 !important;
+}
+
 // Homepage Headers
 .homepage {
-  color: $home-header-color;
+  color: $dark-text;
   font-family: $main-font;
   margin: 0;
   h1 {
     color: inherit;
     font-family: $header-font;
-    font-size: 4rem;
     font-weight:900;
     padding: 1rem 0 1rem;
     text-align: center;
@@ -81,13 +168,17 @@ html, body, p, span {
   h2 {
     color: inherit;
     font-family: $header-font;
-    font-size: 3rem;
     font-weight: 700;
     text-align: center;
   }
-  html p span{
-    font-family: $main-font !important;
-    font-size: 1.5rem;
+  h3 {
+    color: inherit;
+    font-family: $header-font;
     font-weight: 400;
+    text-align: center;
+  }
+  html, body, p, span{
+    font-family: $main-font;
+    font-weight: 300;
   }
 }
