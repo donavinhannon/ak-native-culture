@@ -28,38 +28,39 @@ $bps-font-weight: 300;
 // }
 
 @media screen and (max-width:768px){
-  html{font-family:$main-font;font-size: 12px !important;}
+  html{font-size: 12px !important;}
   h1{font-size: 2.5rem !important;}
   h2{font-size: 1.7rem !important;}
   h3{font-size: 1.5rem !important;}
   body, p, span {font-size: 1rem !important;}
 }
 @media screen and (min-width:768px){
-  html{font-family:$main-font;font-size: 14px !important;}
+  html{font-size: 14px !important;}
   h1{font-size: 3.5rem !important;}
   h2{font-size: 2.5rem !important;}
   h3{font-size: 2rem !important;}
   body, p, span {font-size: 1.1rem !important;}
 }
 @media screen and (min-width:992px){
-  html{font-family:$main-font;font-size: 15px !important;}
+  html{font-size: 15px !important;}
   h1{font-size: 4rem !important;}
   h2{font-size: 2.75rem !important;}
   h3{font-size: 2.5rem !important;}
   body, p, span {font-size: 1.25rem !important;}
 }
 @media screen and (min-width:1200){
-  html{font-family:$main-font;font-size: 16px !important;}
+  html{font-size: 16px !important;}
   h1{font-size: 4rem !important;}
   h2{font-size: 2.75rem !important;}
   h3{font-size: 2.5rem !important;}
   body, p, span {font-size: 1.25rem !important;}
 }
 
-h1{font-weight: $h1-font-weight !important;}
-h2{font-weight: $h2-font-weight !important;}
-h3{font-weight: $h3-font-weight !important;}
-body, p, span{font-weight: $bps-font-weight !important;}
+html{font-family: $main-font!important;}
+h1{font-family:$header-font!important;font-weight: $h1-font-weight !important;}
+h2{font-family:$header-font!important;font-weight: $h2-font-weight !important;}
+h3{font-family:$header-font!important;font-weight: $h3-font-weight !important;}
+body, p, span{font-family: $main-font!important;font-weight: $bps-font-weight !important;}
 
 // Navigation - don't use .navbar
 .top-menu {
@@ -98,7 +99,7 @@ body, p, span{font-weight: $bps-font-weight !important;}
       rgba(0, 0, 0, 0.25),
       rgba(0, 0, 0, 0.25)
     ),
-    url(../img/totems-bg-scaled.jpg);
+    url(../img/totems-bg-scaled75.jpg);
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -111,13 +112,11 @@ body, p, span{font-weight: $bps-font-weight !important;}
 .top-title {
   color: $light-text;
   h1 {
-    font-family: $header-font;
     padding: 3rem 0 1rem;
     text-align: center;
     text-shadow: $title-shadow;
   }
   p {
-    font-family: $header-font;
     padding:0 0 5rem;
     text-align: center;
     text-shadow: $title-shadow;
@@ -160,25 +159,21 @@ body, p, span{font-weight: $bps-font-weight !important;}
   margin: 0;
   h1 {
     color: inherit;
-    font-family: $header-font;
     font-weight:900;
     padding: 1rem 0 1rem;
     text-align: center;
   }
   h2 {
     color: inherit;
-    font-family: $header-font;
     font-weight: 700;
     text-align: center;
   }
   h3 {
     color: inherit;
-    font-family: $header-font;
     font-weight: 400;
     text-align: center;
   }
   html, body, p, span{
-    font-family: $main-font;
     font-weight: 300;
   }
 }
