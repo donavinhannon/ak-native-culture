@@ -141,6 +141,22 @@ body, p, span{font-weight: $bps-font-weight !important;}
     vertical-align: middle;
   }
 }
+
+.btn-red {
+  background-color: #D45757;
+  border-bottom-color: #802726;
+  color: #000;
+  a {
+    color: #000 !important;
+  }
+  a:link {
+    color: #000 !important;
+  }
+  a:hover {
+    color: #fff !important;
+  }
+}
+
 // Homepage Headers
 .homepage {
   color: $dark-text;
