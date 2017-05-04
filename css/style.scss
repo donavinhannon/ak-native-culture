@@ -225,6 +225,24 @@ body, p, span{font-family: $main-font!important;font-weight: $bps-font-weight !i
   height: 40vh;
   width: 100%;
 }
+@media screen and (max-width:768px){
+  #totem-bg {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../img/totems-bg-mobile.jpg);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  height: 40vh;
+  width: 100%;
+  }
+}
 
 .bg-concrete {
   background-image: url(../img/concrete_seamless.jpg);
