@@ -1,6 +1,8 @@
 @font-face {
   font-family: ArchivoNarrow;
-  src: url(../font/ArchivoNarrow-Regular.ttf);
+  src: url(../font/ArchivoNarrow-Bold.ttf);
+}
+@font-face {
   font-family: Montserrat;
   src: url(../font/Montserrat-Regular.ttf);
 }
@@ -9,8 +11,8 @@
 $dark-text: #2b2b2b;
 $light-text: #fff;
 $nav-bg-color: #12BBD0;
-$header-font: Montserrat;
-$main-font: ArchivoNarrow;
+$header-font: ArchivoNarrow;
+$main-font: Montserrat;
 $main-font-size: 1.5rem;
 $title-shadow: 2px 2px 3px black;
 $h1-font-weight: 900;
@@ -63,33 +65,17 @@ h2{font-family:$header-font!important;font-weight: $h2-font-weight !important;}
 h3{font-family:$header-font!important;font-weight: $h3-font-weight !important;}
 body, p, span{font-family: $main-font!important;font-weight: $bps-font-weight !important;}
 
-// Navigation - don't use .navbar
+// Navigation - don't use .navbar, it's used by bootstrap
 #menu-icon{
-
-}
-header {
-  // background:
-  //   linear-gradient(
-  //     rgba(0, 0, 0, 0.25),
-  //     rgba(0, 0, 0, 0.25)
-  //   ),
-  //   url(../img/totems-bg-scaled75.jpg);
-  // background-repeat:no-repeat;
-  // -webkit-background-size:cover;
-  // -moz-background-size:cover;
-  // -o-background-size:cover;
-  // background-size:cover;
-  // background-position:center;
-  // width: 100%;
-  // position: static;
-  // top: 0;
-  // left: 0;
-  // bottom: 0;
-  // right: 0;
+  background: url(../img/menu-icon.png);
+  display: hidden;
+  height: 32px;
+  vertical-align: middle;
+  width: 32px;
 }
 
 .top-menu {
-  background: transparentize(lighten($nav-bg-color, 5), .75);
+  background: transparentize(lighten($nav-bg-color, 5), 1);
   color: $light-text;
   margin: 0;
   padding: 0;
@@ -124,7 +110,6 @@ header {
 }
 
 .handle {
-  background: lighten($nav-bg-color, 5);
   box-sizing: border-box;
   color: inherit;
   cursor: pointer;
@@ -141,12 +126,13 @@ header {
 
 @media screen and (max-width:768px){
   .top-menu{
-    background: transparentize(lighten($nav-bg-color, 5), 0);
+    // background: transparentize(lighten($nav-bg-color, 5), 0);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     width: 100%;
     ul li{
+      background: transparentize(lighten($nav-bg-color, 5), 0);
       box-sizing: border-box;
       padding: 1rem;
       text-align: left;
@@ -165,15 +151,21 @@ header {
     -webkit-transition: max-height linear .4s;
     -ms-transition: max-height linear .4s;
     -o-transition: max-height linear .4s;
+  }
+  // Show menu-icon
+  #menu-icon{
+    display: inline-block;
+  }
 }
 
 /* Hide the checkbox. Comment out to see the trick! */
-#trigger { display: none }
+#trigger {
+  display: none;
+}
 
 /* Slide out when checked */
 #trigger:checked ~ .menu {
     max-height: 80vh;
-}
 }
 
 .top-title {
