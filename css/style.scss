@@ -189,6 +189,8 @@ body, p, span{font-family: $main-font!important;font-weight: $bps-font-weight !i
   li a{
     display: inline-block !important;
     position: static !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
@@ -214,8 +216,8 @@ body, p, span{font-family: $main-font!important;font-weight: $bps-font-weight !i
 #totem-bg {
   background:
     linear-gradient(
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.25)
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
     ),
     url(../img/totems-bg-scaled75.jpg);
   background-repeat:no-repeat;
@@ -260,7 +262,7 @@ body, p, span{font-family: $main-font!important;font-weight: $bps-font-weight !i
 }
 
 .bg-concrete {
-  background-image: url(../img/concrete_seamless.jpg);
+  background: #ebebeb;
   background-repeat: repeat;
 }
 
