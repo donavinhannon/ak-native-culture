@@ -1,36 +1,15 @@
-@font-face {
-  font-family: ArchivoNarrow;
-  src: url(../font/ArchivoNarrow-Bold.woff2);
-  src: url(../font/ArchivoNarrow-Bold.ttf);
-}
-@font-face {
-  font-family: Montserrat;
-  src: url(../font/Montserrat-Regular.woff2);
-  src: url(../font/Montserrat-Regular.ttf);
-}
-
 // Variables
 $dark-text: #2b2b2b;
 $light-text: #fff;
 $nav-bg-color: #12BBD0;
-$header-font: ArchivoNarrow;
-$main-font: Montserrat;
+$header-font: 'Archivo Narrow', sans-serif;
+$main-font: 'Montserrat', sans-serif;
 $main-font-size: 1.5rem;
 $title-shadow: 2px 2px 3px black;
 $h1-font-weight: 900;
 $h2-font-weight: 700;
 $h3-font-weight: 400;
 $bps-font-weight: 400;
-
-// @mixin header-font{
-//   font-family: Montserrat;
-//   font-weight: 700;
-// }
-//
-// @mixin main-font{
-//   font-family: ArchivoNarrow;
-//   font-weight: 300;
-// }
 
 @media screen and (max-width:768px){
   html{font-size: 12px !important;}
