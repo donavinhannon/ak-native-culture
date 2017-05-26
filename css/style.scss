@@ -163,14 +163,9 @@ body, p, span{font-family: $main-font!important;font-weight: $bps-font-weight !i
   }
 }
 
-.nav, .nav-pills {
-  text-align: center !important;
-  li a{
-    display: inline-block !important;
-    position: static !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
+.center-pills {
+    display: flex;
+    justify-content: center;
 }
 
 .tab-pane {
