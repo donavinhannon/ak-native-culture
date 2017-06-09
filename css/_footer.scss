@@ -1,0 +1,93 @@
+.bg--footer {
+  background: $footer-bg-color;
+}
+
+.footer {
+  padding: 2rem;
+  color: set-text-color($footer-bg-color);
+
+  &__title {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: $font-main;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: capitalize;
+  }
+
+  &__col {
+    padding-bottom: .5rem;
+    font-family: $font-main;
+    font-size: 1.1rem;
+    line-height: 1.3;
+
+    // unvisited link
+    a:link {
+      color: $a-link-color;
+      text-decoration: $a-link-text-dec;
+    }
+
+    // mouse over link
+    a:hover {
+      color: $a-hover-color;
+      text-decoration: $a-hover-text-dec;
+    }
+
+    // selected link
+    a:active {
+      color: $a-active-color;
+      text-decoration: $a-hover-text-dec;
+    }
+
+    // visited link
+    a:visited {
+      color: $a-link-color;
+      text-decoration: $a-link-text-dec;
+    }
+    // visited hover link
+    a:visited:hover {
+      color: $a-hover-color;
+      text-decoration: $a-link-text-dec;
+    }
+  }
+
+  &__item-icon {
+    &--address::before {
+      font-family: FontAwesome;
+      font-size: $icon-font-size;
+      content: '\f041';
+    }
+
+    &--email::before {
+      font-family: FontAwesome;
+      font-size: $icon-font-size;
+      content: '\f2b6';
+    }
+
+    &--phone::before {
+      font-family: FontAwesome;
+      font-size: $icon-font-size;
+      content: '\f095';
+    }
+  }
+}
+
+.list-unstyled {
+  list-style: none;
+
+  &--fa-icons {
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding-left: $list-p-w-m;
+    }
+
+    li::before {
+      display: inline-block;
+      width: $list-p-w-m;
+      margin-left: -$list-p-w-m;
+    }
+  }
+}
