@@ -292,3 +292,8 @@ hr {
 .padding-2 {
   padding: 2rem 0 0;
 }
+
+.img-zoom:hover{
+  transition-duration: .3s;
+  transform: scale(1.02);
+}
