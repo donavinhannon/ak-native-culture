@@ -198,6 +198,11 @@
           <h3>Culture Camp 2017</h3>
           <p>This year we had 45 participants from the ages of five to 86.  With many new faces we quickly got started with our talking circle to tell where our families come from throughout Alaska. We had people all the way from San Diego, California to Ocean Shores, Washington. </p>
           <p>Thank you to all who came and participated in this culture camp.  My heart is overflowing with joy seeing my dream come alive that my grandmother Evelyn (Blondie) James and I talked about for many years.  Thank you to my family and friends for all the support you provide and the encouragement you give me. With this I am able to provide what I have learned through instruction and my hands.</p>
+          <p class="hidden-md hidden-lg"><a id="toggleButtonMobile" onclick="toggleText('toggleButtonMobile', 'textAreaMobile');" href="javascript:void(0);">... Show More</a></p>
+          <p class="hidden-xs hidden-sm"><a id="toggleButtonDesktop" onclick="toggleText('toggleButtonDesktop', 'textAreaDesktop');" href="javascript:void(0);">... Show More</a></p>
+        </div>
+        <div class="col-xs-12 hidden-md hidden-lg" id="textAreaMobile">
+          <!-- Show text on click -->
         </div>
         <div class="col-md-7 text-center">
           <h3>March 2017 Image Gallery</h3>
@@ -259,6 +264,11 @@
             <a href="img/3-2017/prep-3.jpg" title="prep-3"></a>
             <a href="img/3-2017/prep-4.jpg" title="prep-4"></a>
           </div>
+        </div>
+      </div>
+      <div class="row hidden-xs hidden-sm">
+        <div class="col-xs-12" id="textAreaDesktop">
+          <!-- Show text on click -->
         </div>
       </div>
       <div class="padding-2 hidden-xs hidden-sm"></div>
@@ -402,5 +412,23 @@
   };
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  var status = 'less';
+
+  function toggleText(buttonId, textAreaId)
+  {
+      var text = '<p>I was blessed to have my eldest son to lead in the drum making. Thank you to Bob and Anne Kennedy who also assisted. Gunalcheesh to Cliff Johnson and Kiele Wise of Juneau Alaska for harvesting the devils club for our drums sticks and beaded necklaces. These tables were given a sample and demonstration at the beginning and students were on there own after that.</p><p>Christopher Looper helped guide students with the paddles, Shirley Ann Giannini guided students with the newly introduced Octopus bags and beading, and last but least we introduced cedar bark weaving lead by myself.</p><p>Lunch was provided with a heaping pot of clam chowder, salmon spread, sailor boy crackers and many goodies provided by students.</p><p>Howaa and Gunalcheesh to Donavin Hannon, Jay Silva, John Hannon, Don and Linda Starbard, Christopher Looper, Shirley Giannini, Charlene Gray, Scott Fulton, Richard Peterson, Cliff Johnson, Kiele Wise, Miranda Starbard, Sue and Israel shotridge for taking the time to help and support this camp.</p>';
+
+      if (status == 'less') {
+          document.getElementById(textAreaId).innerHTML = text;
+          document.getElementById(buttonId).innerText = 'Show Less';
+          status = 'more';
+      } else if (status == 'more') {
+          document.getElementById(textAreaId).innerHTML = '';
+          document.getElementById(buttonId).innerText = 'Show More';
+          status = 'less';
+      }
+  }
+  </script>
 </body>
 </html>
