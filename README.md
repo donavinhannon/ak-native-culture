@@ -16,7 +16,7 @@ This was my first project coming out of a long break from front-end development.
 Also, if you click/tap on one of the images in the past events section a photo gallery will pop up.  I had a thumbnail for each image originally but that caused too many http requests so I changes it to one gallery image.  I will be refactoring the code and implimenting the site into a CMS.  Once they have more content for me to add. 
 
 ## Page Speed Analysis
-Mobile 71/100  |  Desktop 89/100
+PageSpeed Insights Mobile 71/100, Desktop 89/100    |    GTMetrix 99%   |   Pingdom 96%
 
 Possible Optimizations:
 * Eliminate render-blocking JavaScript and CSS in above-the-fold content
