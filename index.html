@@ -9,8 +9,20 @@
 <link rel="canonical" href="https://www.calaska.org/">
 <link rel="stylesheet" href="css/style.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow:700|Montserrat">
 <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+<script>
+  if(navigator.userAgent.indexOf("Speed Insights") == -1) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-88737108-2', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
 </head>
 
 <body>
@@ -23,7 +35,7 @@
       <li><a href="#upcoming-events">Upcoming Events</a></li>
       <li><a href="#cultural-activities">Cultural Activities</a></li>
       <li><a href="#past-events">Past Events</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
   <!-- Top Header -->
@@ -39,6 +51,7 @@
   </header>
   <!-- Section 1 #upcoming-events -->
   <section class="container-fluid bg-concrete" id="upcoming-events">
+    <div class="padding-2 hidden-xs hidden-sm"></div>
     <div class="row text-center">
       <h2>Upcoming Events</h2>
     </div>
@@ -51,8 +64,7 @@
     <div class="container homepage">
       <div class="row">
         <div class="col-md-6 col-md-offset-1 col-sm-8 col-xs-12">
-          <img class="img-responsive img-rounded hidden-xs visible-sm visible-md visible-lg" src="img/one-people/paddles.jpg" alt="Paddle workshop - 3 paddles laid out on grass">
-          <img class="img-responsive img-rounded visble-xs hidden-sm  hidden-md hidden-lg img-center" src="img/one-people/paddles-mobile.jpg" alt="Paddle workshop - 3 paddles laid out on grass">
+          <img class="img-responsive img-rounded" src="img/one-people/paddles.jpg" alt="Paddle workshop - 3 paddles laid out on grass">
           <!-- Margin fix all screens--><div class="col-xs-12">&nbsp;</div>
           <p>Master Carver <b>Doug Chilton</b> from the <b>One People Canoe Society</b> will be joining us to host a paddle making workshop.</p>
           <p><b>When:</b> October 6-8th, 2017</p>
@@ -70,11 +82,13 @@
         </div>
         <!-- Margin fix all screens--><div class="col-xs-12">&nbsp;</div>
       </div>
+      <div class="padding-2 hidden-xs hidden-sm"></div>
     </div>
     <!-- TODO: Add moccasin making event -->
   </section>
-  <!-- Second Section | #cultural-activities -->
+  <!-- Section 2 | #cultural-activities -->
   <section class="container-fluid" id="cultural-activities">
+    <div class="padding-2 hidden-xs hidden-sm"></div>
     <div class="container homepage">
       <div class="row">
         <h2>Cultural Activities Practiced At Camps</h2>
@@ -179,9 +193,11 @@
         </div>
       </div>
     </div>
+    <div class="padding-2 hidden-xs hidden-sm"></div>
   </section>
-  <!-- Third Section | #past-events -->
+  <!-- Section 3 | #past-events -->
   <section class="container-fluid bg-concrete" id="past-events">
+    <div class="padding-2 hidden-xs hidden-sm"></div>
     <div class="container homepage">
       <div class="row">
         <div class="col-md-12">
@@ -189,187 +205,98 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
           <h3>Culture Camp 2017</h3>
           <p>This year we had 45 participants from the ages of five to 86.  With many new faces we quickly got started with our talking circle to tell where our families come from throughout Alaska. We had people all the way from San Diego, California to Ocean Shores, Washington. </p>
           <p>Thank you to all who came and participated in this culture camp.  My heart is overflowing with joy seeing my dream come alive that my grandmother Evelyn (Blondie) James and I talked about for many years.  Thank you to my family and friends for all the support you provide and the encouragement you give me. With this I am able to provide what I have learned through instruction and my hands.</p>
+          <p class="hidden-md hidden-lg"><a id="toggleButtonMobile" onclick="toggleText('toggleButtonMobile', 'textAreaMobile');" href="javascript:void(0);">... Show More</a></p>
+          <p class="hidden-xs hidden-sm"><a id="toggleButtonDesktop" onclick="toggleText('toggleButtonDesktop', 'textAreaDesktop');" href="javascript:void(0);">... Show More</a></p>
         </div>
-        <div class="col-md-8 text-center">
+        <div class="col-xs-12 hidden-md hidden-lg" id="textAreaMobile">
+          <!-- Show text on click -->
+        </div>
+        <div class="col-md-7 text-center">
           <h3>March 2017 Image Gallery</h3>
           <div id="links">
-            <a href="img/3-2017/beads-1.jpg" title="beads-1">
-              <img src="img/3-2017/thumbnails/beads-1.jpg" alt="beads-1">
+            <a href="img/3-2017/beads-1.jpg" title="View 2017 Gallery">
+              <img class="img-responsive img-rounded img-zoom" src="img/3-2017/2017-gallery.jpg" alt="2017 Gallery Image">
             </a>
-            <a href="img/3-2017/beads-2.jpg" title="beads-2">
-              <img src="img/3-2017/thumbnails/beads-2.jpg" alt="beads-2">
-            </a>
-            <a href="img/3-2017/beads-3.jpg" title="beads-3">
-              <img src="img/3-2017/thumbnails/beads-3.jpg" alt="beads-3">
-            </a>
-            <a href="img/3-2017/beads-4.jpg" title="beads-4">
-              <img src="img/3-2017/thumbnails/beads-4.jpg" alt="beads-4">
-            </a>
-            <a href="img/3-2017/drums-1.jpg" title="drums-1">
-              <img src="img/3-2017/thumbnails/drums-1.jpg" alt="drums-1">
-            </a>
-            <a href="img/3-2017/drums-2.jpg" title="drums-2">
-              <img src="img/3-2017/thumbnails/drums-2.jpg" alt="drums-2">
-            </a>
-            <a href="img/3-2017/drums-3.jpg" title="drums-3">
-              <img src="img/3-2017/thumbnails/drums-3.jpg" alt="drums-3">
-            </a>
-            <a href="img/3-2017/drums-4.jpg" title="drums-4">
-              <img src="img/3-2017/thumbnails/drums-4.jpg" alt="drums-4">
-            </a>
-            <a href="img/3-2017/drums-5.jpg" title="drums-5">
-              <img src="img/3-2017/thumbnails/drums-5.jpg" alt="drums-5">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/drums-6.jpg" title="drums-6">
-              <img src="img/3-2017/thumbnails/drums-6.jpg" alt="drums-6">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/drums-7.jpg" title="drums-7">
-              <img src="img/3-2017/thumbnails/drums-7.jpg" alt="drums-7">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/drums-8.jpg" title="drums-8">
-              <img src="img/3-2017/thumbnails/drums-8.jpg" alt="drums-8">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/drums-9.jpg" title="drums-9">
-              <img src="img/3-2017/thumbnails/drums-9.jpg" alt="drums-9">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/drums-10.jpg" title="drums-10">
-              <img src="img/3-2017/thumbnails/drums-10.jpg" alt="drums-10">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/drums-11.jpg" title="drums-11">
-              <img src="img/3-2017/thumbnails/drums-11.jpg" alt="drums-11">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/drums-12.jpg" title="drums-12">
-              <img src="img/3-2017/thumbnails/drums-12.jpg" alt="drums-12">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/drums-13.jpg" title="drums-13">
-              <img src="img/3-2017/thumbnails/drums-13.jpg" alt="drums-13">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/drums-14.jpg" title="drums-14">
-              <img src="img/3-2017/thumbnails/drums-14.jpg" alt="drums-14">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/drums-15.jpg" title="drums-15">
-              <img src="img/3-2017/thumbnails/drums-15.jpg" alt="drums-15">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/drums-16.jpg" title="drums-16">
-              <img src="img/3-2017/thumbnails/drums-16.jpg" alt="drums-16">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/drums-17.jpg" title="drums-17">
-              <img src="img/3-2017/thumbnails/drums-17.jpg" alt="drums-17">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/paddles-1.jpg" title="paddles-1">
-              <img src="img/3-2017/thumbnails/paddles-1.jpg" alt="paddles-1">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/paddles-2.jpg" title="paddles-2">
-              <img src="img/3-2017/thumbnails/paddles-2.jpg" alt="paddles-2">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/paddles-3.jpg" title="paddles-3">
-              <img src="img/3-2017/thumbnails/paddles-3.jpg" alt="paddles-3">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/paddles-4.jpg" title="paddles-4">
-              <img src="img/3-2017/thumbnails/paddles-4.jpg" alt="paddles-4">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/paddles-5.jpg" title="paddles-5">
-              <img src="img/3-2017/thumbnails/paddles-5.jpg" alt="paddles-5">
-            </a>
-            <a class="hidden-xs" href="img/3-2017/paddles-6.jpg" title="paddles-6">
-              <img src="img/3-2017/thumbnails/paddles-6.jpg" alt="paddles-6">
-            </a>
-            <a class="hidden-xs hidden-sm" href="img/3-2017/paddles-7.jpg" title="paddles-7">
-              <img src="img/3-2017/thumbnails/paddles-7.jpg" alt="paddles-7">
-            </a>
-            <a class="hidden-xs hidden-sm" href="img/3-2017/paddles-8.jpg" title="paddles-8">
-              <img src="img/3-2017/thumbnails/paddles-8.jpg" alt="paddles-8">
-            </a>
-            <a class="hidden-xs hidden-sm" href="img/3-2017/paddles-9.jpg" title="paddles-9">
-              <img src="img/3-2017/thumbnails/paddles-9.jpg" alt="paddles-9">
-            </a>
-            <a class="hidden-xs hidden-sm" href="img/3-2017/weaving-1.jpg" title="weaving-1">
-              <img src="img/3-2017/thumbnails/weaving-1.jpg" alt="weaving-1">
-            </a>
-            <a class="hidden-xs hidden-sm" href="img/3-2017/weaving-2.jpg" title="weaving-2">
-              <img src="img/3-2017/thumbnails/weaving-2.jpg" alt="weaving-2">
-            </a>
-            <a class="hidden-xs hidden-sm" href="img/3-2017/weaving-3.jpg" title="weaving-3">
-              <img src="img/3-2017/thumbnails/weaving-3.jpg" alt="weaving-3">
-            </a>
-            <a class="hidden-xs hidden-sm" href="img/3-2017/weaving-4.jpg" title="weaving-4">
-              <img src="img/3-2017/thumbnails/weaving-4.jpg" alt="weaving-4">
-            </a>
-            <a class="hidden-xs hidden-sm" href="img/3-2017/weaving-5.jpg" title="weaving-5">
-              <img src="img/3-2017/thumbnails/weaving-5.jpg" alt="weaving-5">
-            </a>
-            <a class="hidden-xs hidden-sm" href="img/3-2017/weaving-6.jpg" title="weaving-6">
-              <img src="img/3-2017/thumbnails/weaving-6.jpg" alt="weaving-6">
-            </a>
-            <a class="hidden-xs hidden-sm" href="img/3-2017/weaving-7.jpg" title="weaving-7">
-              <img src="img/3-2017/thumbnails/weaving-7.jpg" alt="weaving-7">
-            </a>
-            <a class="hidden-xs hidden-sm" href="img/3-2017/weaving-8.jpg" title="weaving-8">
-              <img src="img/3-2017/thumbnails/weaving-8.jpg" alt="weaving-8">
-            </a>
-            <a class="hidden-xs hidden-sm" href="img/3-2017/weaving-9.jpg" title="weaving-9">
-              <img src="img/3-2017/thumbnails/weaving-9.jpg" alt="weaving-9">
-            </a>
-            <a class="hidden-xs hidden-sm" href="img/3-2017/weaving-10.jpg" title="weaving-10">
-              <img src="img/3-2017/thumbnails/weaving-10.jpg" alt="weaving-10">
-            </a>
-            <a class="hidden-xs hidden-sm hidden-md" href="img/3-2017/weaving-11.jpg" title="weaving-11">
-              <img src="img/3-2017/thumbnails/weaving-11.jpg" alt="weaving-11">
-            </a>
-            <a class="hidden-xs hidden-sm hidden-md" href="img/3-2017/weaving-12.jpg" title="weaving-12">
-              <img src="img/3-2017/thumbnails/weaving-12.jpg" alt="weaving-12">
-            </a>
-            <a class="hidden-xs hidden-sm hidden-md" href="img/3-2017/weaving-13.jpg" title="weaving-13">
-              <img src="img/3-2017/thumbnails/weaving-13.jpg" alt="weaving-13">
-            </a>
-            <a class="hidden-xs hidden-sm hidden-md" href="img/3-2017/weaving-14.jpg" title="weaving-14">
-              <img src="img/3-2017/thumbnails/weaving-14.jpg" alt="weaving-14">
-            </a>
-            <a class="hidden-xs hidden-sm hidden-md" href="img/3-2017/people-1.jpg" title="people-1">
-              <img src="img/3-2017/thumbnails/people-1.jpg" alt="people-1">
-            </a>
-            <a class="hidden-xs hidden-sm hidden-md" href="img/3-2017/people-2.jpg" title="people-2">
-              <img src="img/3-2017/thumbnails/people-2.jpg" alt="people-2">
-            </a>
-            <a class="hidden-xs hidden-sm hidden-md" href="img/3-2017/people-3.jpg" title="people-3">
-              <img src="img/3-2017/thumbnails/people-3.jpg" alt="people-3">
-            </a>
-            <a class="hidden-xs hidden-sm hidden-md" href="img/3-2017/people-4.jpg" title="people-4">
-              <img src="img/3-2017/thumbnails/people-4.jpg" alt="people-4">
-            </a>
-            <a class="hidden-xs hidden-sm hidden-md" href="img/3-2017/people-5.jpg" title="people-5">
-              <img src="img/3-2017/thumbnails/people-5.jpg" alt="people-5">
-            </a>
-            <a class="hidden-xs hidden-sm hidden-md" href="img/3-2017/people-6.jpg" title="people-6">
-              <img src="img/3-2017/thumbnails/people-6.jpg" alt="people-6">
-            </a>
-            <a class="hidden-xs hidden-sm hidden-md" href="img/3-2017/prep-1.jpg" title="prep-1">
-              <img src="img/3-2017/thumbnails/prep-1.jpg" alt="prep-1">
-            </a>
-            <a class="hidden-xs hidden-sm hidden-md" href="img/3-2017/prep-2.jpg" title="prep-2">
-              <img src="img/3-2017/thumbnails/prep-2.jpg" alt="prep-2">
-            </a>
-            <a class="hidden-xs hidden-sm hidden-md" href="img/3-2017/prep-3.jpg" title="prep-3">
-              <img src="img/3-2017/thumbnails/prep-3.jpg" alt="prep-3">
-            </a>
-            <a class="hidden-xs hidden-sm hidden-md" href="img/3-2017/prep-4.jpg" title="prep-4">
-              <img src="img/3-2017/thumbnails/prep-4.jpg" alt="prep-4">
-            </a>
+            <a href="img/3-2017/beads-2.jpg" title="beads-2"></a>
+            <a href="img/3-2017/beads-3.jpg" title="beads-3"></a>
+            <a href="img/3-2017/beads-4.jpg" title="beads-4"></a>
+            <a href="img/3-2017/drums-1.jpg" title="drums-1"></a>
+            <a href="img/3-2017/drums-2.jpg" title="drums-2"></a>
+            <a href="img/3-2017/drums-3.jpg" title="drums-3"></a>
+            <a href="img/3-2017/drums-4.jpg" title="drums-4"></a>
+            <a href="img/3-2017/drums-5.jpg" title="drums-5"></a>
+            <a href="img/3-2017/drums-6.jpg" title="drums-6"></a>
+            <a href="img/3-2017/drums-7.jpg" title="drums-7"></a>
+            <a href="img/3-2017/drums-8.jpg" title="drums-8"></a>
+            <a href="img/3-2017/drums-9.jpg" title="drums-9"></a>
+            <a href="img/3-2017/drums-10.jpg" title="drums-10"></a>
+            <a href="img/3-2017/drums-11.jpg" title="drums-11"></a>
+            <a href="img/3-2017/drums-12.jpg" title="drums-12"></a>
+            <a href="img/3-2017/drums-13.jpg" title="drums-13"></a>
+            <a href="img/3-2017/drums-14.jpg" title="drums-14"></a>
+            <a href="img/3-2017/drums-15.jpg" title="drums-15"></a>
+            <a href="img/3-2017/drums-16.jpg" title="drums-16"></a>
+            <a href="img/3-2017/drums-17.jpg" title="drums-17"></a>
+            <a href="img/3-2017/paddles-1.jpg" title="paddles-1"></a>
+            <a href="img/3-2017/paddles-2.jpg" title="paddles-2"></a>
+            <a href="img/3-2017/paddles-3.jpg" title="paddles-3"></a>
+            <a href="img/3-2017/paddles-4.jpg" title="paddles-4"></a>
+            <a href="img/3-2017/paddles-5.jpg" title="paddles-5"></a>
+            <a href="img/3-2017/paddles-6.jpg" title="paddles-6"></a>
+            <a href="img/3-2017/paddles-7.jpg" title="paddles-7"></a>
+            <a href="img/3-2017/paddles-8.jpg" title="paddles-8"></a>
+            <a href="img/3-2017/paddles-9.jpg" title="paddles-9"></a>
+            <a href="img/3-2017/weaving-1.jpg" title="weaving-1"></a>
+            <a href="img/3-2017/weaving-2.jpg" title="weaving-2"></a>
+            <a href="img/3-2017/weaving-3.jpg" title="weaving-3"></a>
+            <a href="img/3-2017/weaving-4.jpg" title="weaving-4"></a>
+            <a href="img/3-2017/weaving-5.jpg" title="weaving-5"></a>
+            <a href="img/3-2017/weaving-6.jpg" title="weaving-6"></a>
+            <a href="img/3-2017/weaving-7.jpg" title="weaving-7"></a>
+            <a href="img/3-2017/weaving-8.jpg" title="weaving-8"></a>
+            <a href="img/3-2017/weaving-9.jpg" title="weaving-9"></a>
+            <a href="img/3-2017/weaving-10.jpg" title="weaving-10"></a>
+            <a href="img/3-2017/weaving-11.jpg" title="weaving-11"></a>
+            <a href="img/3-2017/weaving-12.jpg" title="weaving-12"></a>
+            <a href="img/3-2017/weaving-13.jpg" title="weaving-13"></a>
+            <a href="img/3-2017/weaving-14.jpg" title="weaving-14"></a>
+            <a href="img/3-2017/people-1.jpg" title="people-1"></a>
+            <a href="img/3-2017/people-2.jpg" title="people-2"></a>
+            <a href="img/3-2017/people-3.jpg" title="people-3"></a>
+            <a href="img/3-2017/people-4.jpg" title="people-4"></a>
+            <a href="img/3-2017/people-5.jpg" title="people-5"></a>
+            <a href="img/3-2017/people-6.jpg" title="people-6"></a>
+            <a href="img/3-2017/prep-1.jpg" title="prep-1"></a>
+            <a href="img/3-2017/prep-2.jpg" title="prep-2"></a>
+            <a href="img/3-2017/prep-3.jpg" title="prep-3"></a>
+            <a href="img/3-2017/prep-4.jpg" title="prep-4"></a>
           </div>
         </div>
       </div>
+      <div class="row hidden-xs hidden-sm">
+        <div class="col-xs-12" id="textAreaDesktop">
+          <!-- Show text on click -->
+        </div>
+      </div>
+      <div class="padding-2 hidden-xs hidden-sm"></div>
       <hr>
+      <div class="padding-2 hidden-xs hidden-sm"></div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Culture Camp 2015</h3>
+        </div>
+      </div>
+      <div class="padding-2 hidden-xs hidden-sm"></div>
       <div class="row">
         <!-- TODO: Change Background color of this section - possibly turquoise -->
         <div class="col-md-7">
           <div id="sliders">
             <a href="img/9-2015/2015-culture-camp-43.jpg" title="2015 Culture Camp 1">
-              <img class="img-responsive img-rounded hidden-xs visible-sm visible-md visible-lg" src="img/9-2015/2015-gallery.jpg" alt="2015 Gallery picture">
-              <img class="img-responsive img-rounded visble-xs hidden-sm  hidden-md hidden-lg img-center" src="img/9-2015/2015-gallery-mobile.jpg" alt="2015 Gallery picture">
+              <img class="img-responsive img-rounded img-zoom" src="img/9-2015/2015-gallery.jpg" alt="2015 Gallery picture">
             </a>
             <!-- Margin fix all screens--><div class="col-xs-12">&nbsp;</div>
             <a href="img/9-2015/2015-culture-camp-2.jpg" title="2015 Culture Camp 2"></a>
@@ -425,13 +352,42 @@
           </div>
         </div>
         <div class="col-md-5">
-          <h3>Culture Camp 2015</h3>
           <p>Calaska Culture Camp had a remarkable 30 Aleut, Tlingit, and Haida Natives and their families. We started the day off with a talking circle introducing ourselves with our english name, native name, Eagle/Raven and what house we are from.  We quickly learned how a lot of us are related through our ancestors.</p>
           <p>When finished with the talking circle; the paint brushes, sand paper, planners and deer hide all  began to form beautiful finished projects of drums, paddles, devil's club beaded necklaces and drum sticks.</p>
         </div>
       </div>
     </div>
+    <div class="padding-2 hidden-xs hidden-sm"></div>
   </section>
+  <footer class="container-fluid footer bg--footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-4 footer__col">
+          <div class="footer__title">Activities</div>
+          <a href="#cultural-activities">Paddles</a>
+          <br>
+          <a href="#cultural-activities">Beaded Necklace</a>
+          <br>
+          <a href="#cultural-activities">Cedar Weaving</a>
+        </div>
+        <div class="col-12 col-sm-4 footer__col">
+          <div class="footer__title">Events</div>
+          <a href="#upcoming-events">Upcoming Events</a>
+          <br>
+          <a href="#past-events">Past Events</a>
+        </div>
+        <div class="col-12 col-sm-4 footer__col">
+          <div class="footer__title" id="contact">Contact</div>
+          <ul class="list-unstyled list-unstyled--fa-icons">
+            <li class="footer__item-icon--email"><a href="mailto:CalaskaCC@gmail.com">CalaskaCC@gmail.com</a></li>
+            <li class="footer__item-icon--address">Isleton, CA</li>
+            <!-- <li class="footer__item-icon--phone"><a href="tel:18475555555">1-847-555-5555</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
   <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
     <div class="slides"></div>
@@ -467,5 +423,23 @@
   };
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  var status = 'less';
+
+  function toggleText(buttonId, textAreaId)
+  {
+      var text = '<p>I was blessed to have my eldest son to lead in the drum making. Thank you to Bob and Anne Kennedy who also assisted. Gunalcheesh to Cliff Johnson and Kiele Wise of Juneau Alaska for harvesting the devils club for our drums sticks and beaded necklaces. These tables were given a sample and demonstration at the beginning and students were on there own after that.</p><p>Christopher Looper helped guide students with the paddles, Shirley Ann Giannini guided students with the newly introduced Octopus bags and beading, and last but least we introduced cedar bark weaving lead by myself.</p><p>Lunch was provided with a heaping pot of clam chowder, salmon spread, sailor boy crackers and many goodies provided by students.</p><p>Howaa and Gunalcheesh to Donavin Hannon, Jay Silva, John Hannon, Don and Linda Starbard, Christopher Looper, Shirley Giannini, Charlene Gray, Scott Fulton, Richard Peterson, Cliff Johnson, Kiele Wise, Miranda Starbard, Sue and Israel shotridge for taking the time to help and support this camp.</p>';
+
+      if (status == 'less') {
+          document.getElementById(textAreaId).innerHTML = text;
+          document.getElementById(buttonId).innerText = 'Show Less';
+          status = 'more';
+      } else if (status == 'more') {
+          document.getElementById(textAreaId).innerHTML = '';
+          document.getElementById(buttonId).innerText = 'Show More';
+          status = 'less';
+      }
+  }
+  </script>
 </body>
 </html>

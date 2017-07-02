@@ -1,3 +1,7 @@
+@import 'variables';
+@import 'typography';
+@import 'footer';
+
 // Variables
 $dark-text: #2b2b2b;
 $light-text: #fff;
@@ -283,4 +287,13 @@ hr {
   html, body, p, span{
     font-weight: 300;
   }
+}
+
+.padding-2 {
+  padding: 2rem 0 0;
+}
+
+.img-zoom:hover{
+  transition-duration: .3s;
+  transform: scale(1.02);
 }

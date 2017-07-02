@@ -1,0 +1,27 @@
+// DESCRIPTIVE VARIABLES
+// Generic Color List | Change to Match Sites Style
+$blue: #1f9cfa;
+$black: #000;
+$light-blue: lighten($blue, 10);
+$footer-bg-color: #4a84b5;
+$white: #fff;
+
+// FUNCTIONAL VARIABLES
+// Text Colors
+$text-color-light-bg: #000;
+$text-color-dark-bg: #fff;
+$text-color-attention: #1f9cfa;
+
+// A Hover | Link Style
+$a-link-color: #fff;
+$a-visited-color: #fff;
+$a-hover-color: #b53434;
+$a-active-color: #fff;
+$a-link-text-dec: none;
+$a-hover-text-dec: none;
+
+// Icons
+$icon-font-size: 18px;
+
+// List-Unstyled
+$list-p-w-m: 1.75rem;
