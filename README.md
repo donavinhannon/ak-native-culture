@@ -10,6 +10,8 @@ Website for the Calaska Culture Camp, a Culture Camp for Alaska Natives held in 
 * Gulp
 * FontAwesome
 
+*Note: I used the bootstrap and fontawesome cdn because I tested the implementation against hosting them myself and found the cdn to be faster because of a reduced server latency. 
+
 ## About
 This was my first project coming out of a long break from front-end development.  The site is fully responsive at all screen resolutions.  I was trying to use minimal javascript to ensure a quick loading spped so I managed to get the mobile menu working without js.  It was also a last minute project so the scss is a bit sloppy for my taste.  
 
