@@ -1,0 +1,93 @@
+.nav {
+  .nav__item {
+    @include nav-font;
+    color: $white;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 0 5px $black;
+    text-transform: capitalize;
+
+    &:hover,
+    &:focus {
+      background: $color-primary;
+      text-shadow: none;
+    }
+  }
+}
+
+.section-title {
+  @include heading-font;
+  padding-bottom: $section-title-padding;
+  padding-top: $section-title-padding;
+  text-transform: uppercase;
+
+  &--dark-bg {
+    border-bottom: $section-title-border-size solid $color-font-dark-bg;
+    color: $color-font-dark-bg;
+  }
+
+  &--light-bg {
+    border-bottom: $section-title-border-size solid $color-primary;
+    color: $color-primary;
+  }
+}
+
+.bg-img {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  &--activities {
+    background: #5B9C82;
+    background-size: cover;
+  }
+}
+
+.btn {
+  &--primary {
+    @include content-font;
+    background-color: $color-primary !important;
+    color: $color-font-dark-bg !important;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($color-primary, 10) !important;
+    }
+  }
+
+
+  &--secondary {
+    @include content-font;
+    background-color: $color-secondary !important;
+    color: $color-font-dark-bg !important;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($color-secondary, 10) !important;
+    }
+  }
+
+  &--light {
+    @include content-font;
+    background-color: $white !important;
+
+    &:hover,
+    &:focus {
+      background-color: darken($white, 10) !important;
+    }
+  }
+}
+
+.panel {
+  padding-bottom: $padding-section-bottom;
+}
+
+.activity {
+  &__text {
+    @include content-font;
+    color: $color-font-dark-bg;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
