@@ -156,8 +156,10 @@ body, p, span{font-family: $main-font!important;font-weight: $bps-font-weight !i
 .top-title {
   color: $light-text;
   h1 {
-    padding: 8rem 0 1rem;
+    padding-top: 8rem;
+    padding-bottom: 1rem;
     text-align: center;
+    text-transform: uppercase;
     text-shadow: $title-shadow;
   }
   p {
@@ -227,8 +229,10 @@ body, p, span{font-family: $main-font!important;font-weight: $bps-font-weight !i
   .top-title {
     color: $light-text;
     h1 {
-      padding: 5rem 0 1rem;
+      padding-top: 5rem;
+      padding-bottom: 1rem;
       text-align: center;
+      text-transform: uppercase;
       text-shadow: $title-shadow;
     }
     p {

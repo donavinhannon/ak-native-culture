@@ -14,9 +14,9 @@ $text-color-attention: #1f9cfa;
 
 // A Hover | Link Style
 $a-link-color: #fff;
-$a-visited-color: #fff;
+$a-visited-color: $a-link-color;
 $a-hover-color: #b53434;
-$a-active-color: #fff;
+$a-active-color: $a-link-color;
 $a-link-text-dec: none;
 $a-hover-text-dec: none;
 
