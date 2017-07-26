@@ -1,38 +1,38 @@
 {
   "Drums": {
     "text": "Paragraph about making drums",
-    "desktop-img-1": "assets/img/drums-desktop-1",
-    "desktop-img-2": "assets/img/drums-desktop-2",
-    "desktop-img-3": "assets/img/drums-desktop-3",
-    "mobile-img-1": "assets/img/drums-mobile-1",
-    "mobile-img-2": "assets/img/drums-mobile-2",
-    "mobile-img-3": "assets/img/drums-mobile-3"
+    "desktopImg1": "assets/img/3-2017/active/drums17.jpg",
+    "desktopImg2": "assets/img/3-2017/active/drums2.jpg",
+    "desktopImg3": "assets/img/3-2017/active/drums5.jpg",
+    "mobileImg1": "assets/img/drums-mobile-1",
+    "mobileImg2": "assets/img/drums-mobile-2",
+    "mobileImg3": "assets/img/drums-mobile-3"
   },
   "Paddles": {
     "text": "Paragraph about making paddles",
-    "desktop-img-1": "assets/img/paddles-desktop-1",
-    "desktop-img-2": "assets/img/paddles-desktop-2",
-    "desktop-img-3": "assets/img/paddles-desktop-3",
-    "mobile-img-1": "assets/img/paddles-mobile-1",
-    "mobile-img-2": "assets/img/paddles-mobile-2",
-    "mobile-img-3": "assets/img/paddles-mobile-3"
+    "desktopImg1": "assets/img/3-2017/active/paddles2.jpg",
+    "desktopImg2": "assets/img/3-2017/active/paddles7.jpg",
+    "desktopImg3": "assets/img/9-2015/active/2015-culture-camp-4.jpg",
+    "mobileImg1": "assets/img/paddles-mobile-1",
+    "mobileImg2": "assets/img/paddles-mobile-2",
+    "mobileImg3": "assets/img/paddles-mobile-3"
   },
   "Beads": {
     "text": "Paragraph about making beads",
-    "desktop-img-1": "assets/img/beads-desktop-1",
-    "desktop-img-2": "assets/img/beads-desktop-2",
-    "desktop-img-3": "assets/img/beads-desktop-3",
-    "mobile-img-1": "assets/img/beads-mobile-1",
-    "mobile-img-2": "assets/img/beads-mobile-2",
-    "mobile-img-3": "assets/img/beads-mobile-3"
+    "desktopImg1": "assets/img/9-2015/active/2015-culture-camp-24.jpg",
+    "desktopImg2": "assets/img/9-2015/active/2015-culture-camp-23.jpg",
+    "desktopImg3": "assets/img/3-2017/active/beads1.jpg",
+    "mobileImg1": "assets/img/beads-mobile-1",
+    "mobileImg2": "assets/img/beads-mobile-2",
+    "mobileImg3": "assets/img/beads-mobile-3"
   },
   "Weaving": {
     "text": "Paragraph about making weaving",
-    "desktop-img-1": "assets/img/weaving-desktop-1",
-    "desktop-img-2": "assets/img/weaving-desktop-2",
-    "desktop-img-3": "assets/img/weaving-desktop-3",
-    "mobile-img-1": "assets/img/weaving-mobile-1",
-    "mobile-img-2": "assets/img/weaving-mobile-2",
-    "mobile-img-3": "assets/img/weaving-mobile-3"
+    "desktopImg1": "assets/img/3-2017/active/weaving4.jpg",
+    "desktopImg2": "assets/img/3-2017/active/weaving3.jpg",
+    "desktopImg3": "assets/img/3-2017/active/weaving5.jpg",
+    "mobileImg1": "assets/img/weaving-mobile-1",
+    "mobileImg2": "assets/img/weaving-mobile-2",
+    "mobileImg3": "assets/img/weaving-mobile-3"
   }
 }
