@@ -1,38 +1,38 @@
 {
   "Drums": {
     "text": "Paragraph about making drums",
-    "desktop-img-1": "assets/img/drums-desktop-1",
-    "desktop-img-2": "assets/img/drums-desktop-2",
-    "desktop-img-3": "assets/img/drums-desktop-3",
-    "mobile-img-1": "assets/img/drums-mobile-1",
-    "mobile-img-2": "assets/img/drums-mobile-2",
-    "mobile-img-3": "assets/img/drums-mobile-3"
+    "desktopImg1": "assets/img/drums-desktop-1",
+    "desktopImg2": "assets/img/drums-desktop-2",
+    "desktopImg3": "assets/img/drums-desktop-3",
+    "mobileImg1": "assets/img/drums-mobile-1",
+    "mobileImg2": "assets/img/drums-mobile-2",
+    "mobileImg3": "assets/img/drums-mobile-3"
   },
   "Paddles": {
     "text": "Paragraph about making paddles",
-    "desktop-img-1": "assets/img/paddles-desktop-1",
-    "desktop-img-2": "assets/img/paddles-desktop-2",
-    "desktop-img-3": "assets/img/paddles-desktop-3",
-    "mobile-img-1": "assets/img/paddles-mobile-1",
-    "mobile-img-2": "assets/img/paddles-mobile-2",
-    "mobile-img-3": "assets/img/paddles-mobile-3"
+    "desktopImg1": "assets/img/paddles-desktop-1",
+    "desktopImg2": "assets/img/paddles-desktop-2",
+    "desktopImg3": "assets/img/paddles-desktop-3",
+    "mobileImg1": "assets/img/paddles-mobile-1",
+    "mobileImg2": "assets/img/paddles-mobile-2",
+    "mobileImg3": "assets/img/paddles-mobile-3"
   },
   "Beads": {
     "text": "Paragraph about making beads",
-    "desktop-img-1": "assets/img/beads-desktop-1",
-    "desktop-img-2": "assets/img/beads-desktop-2",
-    "desktop-img-3": "assets/img/beads-desktop-3",
-    "mobile-img-1": "assets/img/beads-mobile-1",
-    "mobile-img-2": "assets/img/beads-mobile-2",
-    "mobile-img-3": "assets/img/beads-mobile-3"
+    "desktopImg1": "assets/img/beads-desktop-1",
+    "desktopImg2": "assets/img/beads-desktop-2",
+    "desktopImg3": "assets/img/beads-desktop-3",
+    "mobileImg1": "assets/img/beads-mobile-1",
+    "mobileImg2": "assets/img/beads-mobile-2",
+    "mobileImg3": "assets/img/beads-mobile-3"
   },
   "Weaving": {
     "text": "Paragraph about making weaving",
-    "desktop-img-1": "assets/img/weaving-desktop-1",
-    "desktop-img-2": "assets/img/weaving-desktop-2",
-    "desktop-img-3": "assets/img/weaving-desktop-3",
-    "mobile-img-1": "assets/img/weaving-mobile-1",
-    "mobile-img-2": "assets/img/weaving-mobile-2",
-    "mobile-img-3": "assets/img/weaving-mobile-3"
+    "desktopImg1": "assets/img/weaving-desktop-1",
+    "desktopImg2": "assets/img/weaving-desktop-2",
+    "desktopImg3": "assets/img/weaving-desktop-3",
+    "mobileImg1": "assets/img/weaving-mobile-1",
+    "mobileImg2": "assets/img/weaving-mobile-2",
+    "mobileImg3": "assets/img/weaving-mobile-3"
   }
 }
