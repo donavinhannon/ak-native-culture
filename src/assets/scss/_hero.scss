@@ -20,6 +20,10 @@
     padding-top: $hero-vertical-padding;
     text-align: center;
     text-transform: uppercase;
+
+    &--pages {
+      font-size: 4rem;
+    }
   }
 
   &__sub-title {
