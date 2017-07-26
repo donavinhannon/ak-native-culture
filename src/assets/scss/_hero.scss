@@ -16,6 +16,7 @@
   &__title {
     @include heading-font;
     color: $white;
+    letter-spacing: .07em;
     padding-top: $hero-vertical-padding;
     text-align: center;
     text-transform: uppercase;

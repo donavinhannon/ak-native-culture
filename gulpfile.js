@@ -62,7 +62,7 @@ gulp.task('sass', function () {
 
 // HTML Task
 gulp.task('html', function() {
-  return gulp.src('src/*.html')
+  return gulp.src('src/**/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('dist'))
     .pipe(reload({stream:true}));
@@ -91,7 +91,7 @@ gulp.task('live',  ['browser-sync'], function() {
     gulp.watch('src/assets/scss/**/*', ['sass']);
     gulp.watch('src/assets/js/**/*.js', ['js']);
     gulp.watch('src/assets/img/**/*', ['img']);
-    gulp.watch('src/*.html', ['html']);
+    gulp.watch('src/**/*.html', ['html']);
 });
 
 // Default Task

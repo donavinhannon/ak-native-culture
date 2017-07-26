@@ -4,9 +4,10 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alaska Native Culture Camp - California | Calaska Culture Camp</title>
+  <title>Events | Calaska Culture Camp</title>
+  <!-- TODO: update description -->
   <meta name="description" content="+++++">
-  <link rel="stylesheet" href="assets/css/style.min.css">
+  <link rel="stylesheet" href="../assets/css/style.min.css">
 </head>
 
 <body>
@@ -14,19 +15,19 @@
     <nav class="nav container">
       <ul class="grid grid-5--small grid-5--medium grid-5--large">
         <a class="grid__col nav__item" href="/"><li>Home</li></a>
-        <a class="grid__col nav__item" href="/events/"><li>About</li></a>
+        <a class="grid__col nav__item" href="../events/"><li>About</li></a>
         <a class="grid__col nav__item" href="#"><li>Events</li></a>
         <a class="grid__col nav__item" href="#"><li>Activities</li></a>
         <a class="grid__col nav__item" href="#"><li>Contact</li></a>
       </ul>
     </nav>
+    <!-- TODO: update title and subtitle -->
     <h1 class="hero__title">Calaska Culture Camp</h1>
     <h4 class="hero__sub-title">Bringing Native Alaskans together in Northern California to practice traditional cultural activities.</h4>
   </header>
 
-
   <main>
-    <section class="panel bg-img bg-img--event">
+    <section class="panel bg-img bg-img--event" id="upcoming-events">
       <div class="container grid">
         <div class="grid__col is-12 text-center">
           <h2 class="section-title section-title--light-bg">Upcoming Events</h2>
@@ -48,9 +49,9 @@
         <div class="grid__col is-6 event">
           <h3 class="event__date">Oct 6-8</h3>
           <picture>
-            <source srcset="assets/img/events/paddle-workshop-desktop.jpg" media="(min-width: 491px)"/>
-            <source srcset="assets/img/events/paddle-workshop-mobile.jpg" media="(max-width: 490px)"/>
-            <img class="media" src="assets/img/events/paddle-workshop-desktop.jpg" alt="Paddle Workshop 2017"/>
+            <source srcset="../assets/img/events/paddle-workshop-desktop.jpg" media="(min-width: 491px)"/>
+            <source srcset="../assets/img/events/paddle-workshop-mobile.jpg" media="(max-width: 490px)"/>
+            <img class="media" src="../assets/img/events/paddle-workshop-desktop.jpg" alt="Paddle Workshop 2017"/>
           </picture>
           <h4 class="event__time">12:00 PM - 5:00 PM</h4>
           <h2 class="event__title">3 Day Paddle Workshop</h2>
@@ -59,46 +60,12 @@
         </div>
 
         <div class="grid__col is-12 text-center">
-          <a href="/events/#upcoming-events"><button class="btn--secondary btn--sharp">More Upcoming Events</button></a>
+          <a href="#"><button class="btn--secondary btn--sharp">More Upcoming Events</button></a>
         </div>
       </div>
     </section>
 
-
-    <section class="panel bg-img--activities" id="activities">
-      <div class="container grid">
-        <div class="grid__col is-12 text-center">
-          <h2 class="section-title section-title--dark-bg">Cultural Activities</h2>
-        </div>
-      </div>
-      <div class="container grid grid-center">
-        <div class="grid__col text-center is-12">
-          <a href="#activities"><button class="btn--secondary btn--sharp tab btn--active" onclick="getTabContent('Drums')">Drums</button></a>
-          <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getTabContent('Paddles')">Paddles</button></a>
-          <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getTabContent('Beads')">Beads</button></a>
-          <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getTabContent('Weaving')">Weaving</button></a>
-          <!-- <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getTabContent('Bags')">Bags</button></a> -->
-        </div>
-      </div>
-      <div id="tab-content">
-        <div class="container grid">
-          <div class="grid__col is-12">
-            <p class="activity__text">Paragraph of text about making drums. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, similique doloremque aspernatur qui at obcaecati expedita rerum adipisci repellat reiciendis dignissimos eaque, vel incidunt sequi laboriosam, temporibus! Suscipit ab, officiis?</p>
-          </div>
-          <div class="grid__col text-center is-12--small is-4--medium is-4--large">
-            <img class="media" src="assets/img/3-2017/active/drums-17.jpg" alt="Drum Picture 1">
-          </div>
-          <div class="grid__col text-center is-12--small is-4--medium is-4--large">
-            <img class="media" src="assets/img/3-2017/active/drums-2.jpg" alt="Drum Picture 2">
-          </div>
-          <div class="grid__col text-center is-12--small is-4--medium is-4--large">
-            <img class="media" src="assets/img/3-2017/active/drums-5.jpg" alt="Drum Picture 3">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="panel">
+    <section class="panel" id="past-events">
       <div class="container grid">
         <div class="grid__col is-12 text-center">
           <h2 class="section-title section-title--light-bg">Past Events</h2>
@@ -107,9 +74,9 @@
           <h3 class="event__date">Mar</h3>
           <picture>
             <!-- TODO change picture srcset -->
-            <source srcset="assets/img/events/culture-camp-2017-desktop.jpg" media="(min-width: 491px)"/>
-            <source srcset="assets/img/events/culture-camp-2017-mobile.jpg" media="(max-width: 490px)"/>
-            <img class="media" src="assets/img/events/culture-camp-2017-desktop.jpg" alt="Culture Camp 2017 Image"/>
+            <source srcset="../assets/img/events/culture-camp-2017-desktop.jpg" media="(min-width: 491px)"/>
+            <source srcset="../assets/img/events/culture-camp-2017-mobile.jpg" media="(max-width: 490px)"/>
+            <img class="media" src="../assets/img/events/culture-camp-2017-desktop.jpg" alt="Culture Camp 2017 Image"/>
           </picture>
           <h4 class="event__time">Drums, Bags, Paddles, Weaving, Beads</h4>
           <h2 class="event__title">Culture Camp 2017</h2>
@@ -121,9 +88,9 @@
           <h3 class="event__date">Aug</h3>
           <picture>
             <!-- TODO change picture srcset -->
-            <source srcset="assets/img/events/culture-camp-2015-desktop.jpg" media="(min-width: 491px)"/>
-            <source srcset="assets/img/events/culture-camp-2015-mobile.jpg" media="(max-width: 490px)"/>
-            <img class="media" src="assets/img/events/culture-camp-2015-desktop.jpg" alt="Culture Camp 2015 Image"/>
+            <source srcset="../assets/img/events/culture-camp-2015-desktop.jpg" media="(min-width: 491px)"/>
+            <source srcset="../assets/img/events/culture-camp-2015-mobile.jpg" media="(max-width: 490px)"/>
+            <img class="media" src="../assets/img/events/culture-camp-2015-desktop.jpg" alt="Culture Camp 2015 Image"/>
           </picture>
           <h4 class="event__time">Drums, Paddles</h4>
           <h2 class="event__title">Culture Camp 2015</h2>
@@ -137,9 +104,7 @@
       </div>
 
     </section>
-
   </main>
-
 
   <footer class="footer bg--primary">
     <div class="container grid">
@@ -171,7 +136,7 @@
 
   <!-- Purposely put on bottom -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
-  <script async src="assets/js/bundle.min.js"></script>
+  <script async src="../assets/js/bundle.min.js"></script>
 </body>
 
 </html>
