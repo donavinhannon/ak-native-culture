@@ -4,35 +4,35 @@
     "desktopImg1": "assets/img/3-2017/active/drums-17.jpg",
     "desktopImg2": "assets/img/3-2017/active/drums-2.jpg",
     "desktopImg3": "assets/img/3-2017/active/drums-5.jpg",
-    "mobileImg1": "assets/img/drums-mobile-1",
-    "mobileImg2": "assets/img/drums-mobile-2",
-    "mobileImg3": "assets/img/drums-mobile-3"
+    "mobileImg1": "assets/img/drums-mobile-1.jpg",
+    "mobileImg2": "assets/img/drums-mobile-2.jpg",
+    "mobileImg3": "assets/img/drums-mobile-3.jpg"
   },
   "Paddles": {
     "text": "Paragraph about making paddles",
     "desktopImg1": "assets/img/3-2017/active/paddles-2.jpg",
     "desktopImg2": "assets/img/3-2017/active/paddles-7.jpg",
-    "desktopImg3": "assets/img/9-2015/active/2015-culture-camp-4.jpg",
-    "mobileImg1": "assets/img/paddles-mobile-1",
-    "mobileImg2": "assets/img/paddles-mobile-2",
-    "mobileImg3": "assets/img/paddles-mobile-3"
+    "desktopImg3": "assets/img/9-2015/active/2015-culture-camp-18.jpg",
+    "mobileImg1": "assets/img/paddles-mobile-1.jpg",
+    "mobileImg2": "assets/img/paddles-mobile-2.jpg",
+    "mobileImg3": "assets/img/paddles-mobile-3.jpg"
   },
   "Beads": {
     "text": "Paragraph about making beads",
     "desktopImg1": "assets/img/9-2015/active/2015-culture-camp-24.jpg",
     "desktopImg2": "assets/img/9-2015/active/2015-culture-camp-23.jpg",
     "desktopImg3": "assets/img/3-2017/active/beads-1.jpg",
-    "mobileImg1": "assets/img/beads-mobile-1",
-    "mobileImg2": "assets/img/beads-mobile-2",
-    "mobileImg3": "assets/img/beads-mobile-3"
+    "mobileImg1": "assets/img/beads-mobile-1.jpg",
+    "mobileImg2": "assets/img/beads-mobile-2.jpg",
+    "mobileImg3": "assets/img/beads-mobile-3.jpg"
   },
   "Weaving": {
     "text": "Paragraph about making weaving",
     "desktopImg1": "assets/img/3-2017/active/weaving-4.jpg",
     "desktopImg2": "assets/img/3-2017/active/weaving-3.jpg",
     "desktopImg3": "assets/img/3-2017/active/weaving-5.jpg",
-    "mobileImg1": "assets/img/weaving-mobile-1",
-    "mobileImg2": "assets/img/weaving-mobile-2",
-    "mobileImg3": "assets/img/weaving-mobile-3"
+    "mobileImg1": "assets/img/weaving-mobile-1.jpg",
+    "mobileImg2": "assets/img/weaving-mobile-2.jpg",
+    "mobileImg3": "assets/img/weaving-mobile-3.jpg"
   }
 }
