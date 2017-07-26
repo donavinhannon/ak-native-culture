@@ -11,6 +11,7 @@ $color-primary: $green;
 $color-secondary: $yellow;
 $color-font-dark-bg: $white;
 $color-font-light-bg: #333;
+$color-background-activities: lighten($color-primary, 10); // #FF4F4F 3DC5C5   67D6D6
 $color-background-event-bottom: darken($white, 7);
 $hero-vertical-padding: 5rem;
 $section-title-border-size: 3px;
