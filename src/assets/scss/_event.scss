@@ -40,6 +40,7 @@
   &__details-link {
     @include heading-font;
     color: $color-primary;
+    letter-spacing: .06em;
     margin: 0;
     padding: 5px 15px;
     text-decoration: none;
@@ -48,7 +49,7 @@
 
     &:hover,
     &:focus {
-      color: darken($color-primary, 10);
+      color: darken($color-primary, 15);
       transition: color .2s ease-out;
     }
   }
