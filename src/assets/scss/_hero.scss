@@ -13,6 +13,12 @@
     // text-shadow: 1px 0 5px $black;
   }
 
+  &--events {
+    background: linear-gradient(transparentize($black, .7), transparentize($black, .7)),
+    url('/assets/img/bg/totems-desktop.jpg') center center no-repeat;
+    background-size: cover;
+  }
+
   &__title {
     @include heading-font;
     color: $white;
