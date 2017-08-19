@@ -1,0 +1,15 @@
+.signup {
+  background: $color-background-signup;
+  padding-bottom: 1.3rem;
+  margin-top: 1.5rem !important;
+
+  &__title {
+    @include heading-font;
+    color: $color-font-dark-bg;
+    text-align: center;
+  }
+
+  &__input {
+    color: $color-secondary;
+  }
+}

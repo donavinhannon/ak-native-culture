@@ -56,7 +56,6 @@
     }
   }
 
-
   &--secondary {
     @include content-font;
     background-color: $color-secondary !important;
@@ -65,6 +64,17 @@
     &:hover,
     &:focus {
       background-color: lighten($color-secondary, 10) !important;
+    }
+  }
+
+  &--white-secondary {
+    @include content-font;
+    background-color: $white !important;
+    color: $color-secondary !important;
+
+    &:hover,
+    &:focus {
+      background-color: darken($white, 10) !important;
     }
   }
 

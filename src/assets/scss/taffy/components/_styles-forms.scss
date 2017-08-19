@@ -12,11 +12,11 @@ input:not([type=submit]):not([type=button]),textarea,select{
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    height: 2.25em;
+    height: 2.25rem;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    line-height: 1.5;
+    line-height: 1.5rem;
     padding-bottom: calc(0.375em - 1px);
     padding-left: calc(0.625em - 1px);
     padding-right: calc(0.625em - 1px);
