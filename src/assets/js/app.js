@@ -9,19 +9,55 @@ function getJson(url, callback) {
 }
 
 function getTabContent(tabName) {
-    getJson('https://www.calaska.org/assets/json/activities.json', function(o) {
-        parseTabContent(o, tabName);
-    });
+    const Activity = {
+        'Drums': {
+            'text': 'Paragraph about making drums',
+            'desktopImg1': 'assets/img/3-2017/active/drums-17.jpg',
+            'desktopImg2': 'assets/img/3-2017/active/drums-2.jpg',
+            'desktopImg3': 'assets/img/3-2017/active/drums-5.jpg',
+            'mobileImg1': 'assets/img/drums-mobile-1.jpg',
+            'mobileImg2': 'assets/img/drums-mobile-2.jpg',
+            'mobileImg3': 'assets/img/drums-mobile-3.jpg'
+        },
+        'Paddles': {
+            'text': 'Paragraph about making paddles',
+            'desktopImg1': 'assets/img/3-2017/active/paddles-2.jpg',
+            'desktopImg2': 'assets/img/3-2017/active/paddles-7.jpg',
+            'desktopImg3': 'assets/img/9-2015/active/2015-culture-camp-18.jpg',
+            'mobileImg1': 'assets/img/paddles-mobile-1.jpg',
+            'mobileImg2': 'assets/img/paddles-mobile-2.jpg',
+            'mobileImg3': 'assets/img/paddles-mobile-3.jpg'
+        },
+        'Beads': {
+            'text': 'Paragraph about making beads',
+            'desktopImg1': 'assets/img/9-2015/active/2015-culture-camp-24.jpg',
+            'desktopImg2': 'assets/img/9-2015/active/2015-culture-camp-23.jpg',
+            'desktopImg3': 'assets/img/3-2017/active/beads-1.jpg',
+            'mobileImg1': 'assets/img/beads-mobile-1.jpg',
+            'mobileImg2': 'assets/img/beads-mobile-2.jpg',
+            'mobileImg3': 'assets/img/beads-mobile-3.jpg'
+        },
+        'Weaving': {
+            'text': 'Paragraph about making weaving',
+            'desktopImg1': 'assets/img/3-2017/active/weaving-4.jpg',
+            'desktopImg2': 'assets/img/3-2017/active/weaving-3.jpg',
+            'desktopImg3': 'assets/img/3-2017/active/weaving-5.jpg',
+            'mobileImg1': 'assets/img/weaving-mobile-1.jpg',
+            'mobileImg2': 'assets/img/weaving-mobile-2.jpg',
+            'mobileImg3': 'assets/img/weaving-mobile-3.jpg'
+        }
+    };
+    parseTabContent(Activity, tabName);
+
 }
 
 function parseTabContent(o, tabName) {
-    const json = JSON.parse(o);
-    let results = json.Drums;
-    if (tabName == 'Paddles') {results = json.Paddles;}
-    else if (tabName == 'Beads') {results = json.Beads;}
-    else if (tabName == 'Weaving') {results = json.Weaving;}
-    else if (tabName == 'Bags') {results = json.Bags;}
-    else {results = json.Drums;}
+    let results = o.Drums;
+    if (tabName == 'Paddles') {results = o.Paddles;}
+    else if (tabName == 'Beads') {results = o.Beads;}
+    else if (tabName == 'Weaving') {results = o.Weaving;}
+    else if (tabName == 'Bags') {results = o.Bags;}
+    else {results = o.Drums;}
 
 
     const tabContentHtml = document.getElementById('tab-content');
