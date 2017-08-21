@@ -54,10 +54,9 @@ function getTabContent(tabName) {
 function parseTabContent(o, tabName) {
     let results = o.Drums;
     if (tabName == 'Paddles') {results = o.Paddles;}
-    else if (tabName == 'Beads') {results = o.Beads;}
-    else if (tabName == 'Weaving') {results = o.Weaving;}
-    else if (tabName == 'Bags') {results = o.Bags;}
-    else {results = o.Drums;}
+    if (tabName == 'Beads') {results = o.Beads;}
+    if (tabName == 'Weaving') {results = o.Weaving;}
+    if (tabName == 'Bags') {results = o.Bags;}
 
 
     const tabContentHtml = document.getElementById('tab-content');
