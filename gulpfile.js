@@ -35,8 +35,8 @@ gulp.task('js-minify', function () {
     .pipe(reload({stream:true}));
 });
 
-gulp.task('js-min-slider', function () {
-  return gulp.src('src/assets/js/js-image-slider.js')
+gulp.task('js-img-gallery', function () {
+  return gulp.src('src/assets/js/blueimp-gallery.js')
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(rename({ suffix: '.min' }))
@@ -104,12 +104,12 @@ gulp.task('live',  ['browser-sync'], function() {
     gulp.watch('src/assets/scss/**/*.scss', ['sass']);
     gulp.watch('src/assets/css/**/*.css', ['css']);
     gulp.watch('src/assets/js/**/app.js', ['js-minify']);
-    gulp.watch('src/assets/js/**/js-image-slider.js', ['js-min-slider']);
+    gulp.watch('src/assets/js/**/blueimp-gallery.js', ['js-img-gallery']);
     gulp.watch('src/assets/img/**/*', ['img']);
     gulp.watch('src/**/*.html', ['html']);
 });
 
 // Default Task
 gulp.task('default', function() {
-    gulp.start('sass', 'css', 'js-minify', 'js-min-slider', 'img', 'html');
+    gulp.start('sass', 'css', 'js-minify', 'js-img-gallery', 'img', 'html');
 });
