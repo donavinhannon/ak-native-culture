@@ -64,3 +64,7 @@
     box-shadow: $gallery-img-shadow;
   }
 }
+
+.summary {
+  @include content-font;
+}
