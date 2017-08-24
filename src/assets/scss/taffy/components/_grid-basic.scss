@@ -9,21 +9,21 @@
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 
 .grid>*{
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
-  padding: .512rem 0;
+  padding: .512rem;
 }
 
 
 .grid__col{
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
-  padding: .512rem 0;
+  padding: .512rem;
 }
 
 
