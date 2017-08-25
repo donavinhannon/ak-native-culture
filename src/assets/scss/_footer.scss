@@ -4,20 +4,6 @@
         url('../font/fontello.woff') format('woff');
 }
 
-// A Hover | Link Style
-$a-link-color: #fff;
-$a-visited-color: #fff;
-$a-hover-color:  darken($color-primary, 20);
-$a-active-color: #fff;
-$a-link-text-dec: none;
-$a-hover-text-dec: none;
-
-// Icons
-$icon-font-size: 18px;
-
-// List-Unstyled
-$list-p-w-m: 1.75rem;
-
 .bg--primary {
   background: lighten($color-primary, 10);
 }

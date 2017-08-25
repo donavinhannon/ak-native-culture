@@ -25,3 +25,21 @@ $padding-section-bottom: 5rem;
 @mixin border {
   border: 1px solid $black;
 }
+
+
+// A Hover | Link Style
+$a-link-color: #fff;
+$a-visited-color: #fff;
+$a-hover-color:  darken($color-primary, 20);
+$a-active-color: #fff;
+$a-link-text-dec: none;
+$a-hover-text-dec: none;
+
+$a-subtitle-hover-color: darken($a-link-color, 30);
+$a-subtitle-active-color: darken($a-link-color, 30);
+
+// Icons
+$icon-font-size: 18px;
+
+// List-Unstyled
+$list-p-w-m: 1.75rem;
