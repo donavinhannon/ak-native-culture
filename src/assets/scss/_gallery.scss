@@ -1,4 +1,8 @@
 .gallery {
+  background: lighten($color-primary, 35);
+  padding-bottom: 2rem;
+  padding-top: .5rem;
+
   &__img {
     max-height: 243px;
     min-height: 243px;
@@ -11,5 +15,12 @@
 }
 
 .summary {
-  @include content-font;
+  background: lighten($color-secondary, 35);
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+
+  &__text {
+    @include content-font;
+    color: $color-font-light-bg;
+  }
 }

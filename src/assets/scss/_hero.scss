@@ -22,6 +22,7 @@
   &__title {
     @include heading-font;
     color: $white;
+    font-size: 4rem;
     letter-spacing: .07em;
     padding-top: $hero-vertical-padding;
     text-align: center;
