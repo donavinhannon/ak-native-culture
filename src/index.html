@@ -48,15 +48,14 @@
         <div class="grid__col is-6 event">
           <h3 class="event__date">JUL 29</h3>
           <picture>
-            <!-- TODO change picture srcset -->
+            <!-- TODO change picture srcset and alt-->
             <source srcset="//unsplash.it/660/330/?gravity=west" media="(min-width: 491px)"/>
             <source srcset="//unsplash.it/480/320/?gravity=west" media="(max-width: 490px)"/>
             <img class="media" src="//unsplash.it/660/330/?gravity=west" alt="event img"/>
           </picture>
           <h4 class="event__time">12:00 PM - 5:00 PM</h4>
           <h2 class="event__title">Moccasin Class</h2>
-          <!-- TODO link to event page -->
-          <div class="event__details"><a href="#" class="event__details-link">View Details ►</a></div>
+          <div class="event__details"><a href="./events/moccasin-class-2017.html" class="event__details-link">View Details ►</a></div>
         </div>
 
         <div class="grid__col is-6 event">
@@ -68,8 +67,7 @@
           </picture>
           <h4 class="event__time">12:00 PM - 5:00 PM</h4>
           <h2 class="event__title">3 Day Paddle Workshop</h2>
-          <!-- TODO link to event page -->
-          <div class="event__details"><a href="#" class="event__details-link">View Details ►</a></div>
+          <div class="event__details"><a href="/events/paddle-workshop-2017-one-people-canoe-socitey.html" class="event__details-link">View Details ►</a></div>
         </div>
 
         <div class="grid__col is-12 text-center">
@@ -87,11 +85,11 @@
       </div>
       <div class="container grid grid-center">
         <div class="grid__col text-center is-12">
-          <a href="#activities"><button class="btn--secondary btn--sharp tab btn--active" onclick="getTabContent('Drums')">Drums</button></a>
-          <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getTabContent('Paddles')">Paddles</button></a>
-          <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getTabContent('Beads')">Beads</button></a>
-          <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getTabContent('Weaving')">Weaving</button></a>
-          <!-- <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getTabContent('Bags')">Bags</button></a> -->
+          <a href="#activities"><button class="btn--secondary btn--sharp tab btn--active" onclick="getActivity('Drums')">Drums</button></a>
+          <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getActivity('Paddles')">Paddles</button></a>
+          <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getActivity('Beads')">Beads</button></a>
+          <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getActivity('Weaving')">Weaving</button></a>
+          <!-- <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getActivity('Bags')">Bags</button></a> -->
         </div>
       </div>
       <div id="tab-content">
@@ -121,29 +119,25 @@
         <div class="grid__col is-6 event">
           <h3 class="event__date">Mar</h3>
           <picture>
-            <!-- TODO change picture srcset -->
             <source srcset="assets/img/events/culture-camp-2017-desktop.jpg" media="(min-width: 491px)"/>
             <source srcset="assets/img/events/culture-camp-2017-mobile.jpg" media="(max-width: 490px)"/>
             <img class="media" src="assets/img/events/culture-camp-2017-desktop.jpg" alt="Culture Camp 2017 Image"/>
           </picture>
           <h4 class="event__time">Drums, Bags, Paddles, Weaving, Beads</h4>
           <h2 class="event__title">Culture Camp 2017</h2>
-          <!-- TODO link to event page -->
-          <div class="event__details"><a href="#" class="event__details-link">See What Happened ►</a></div>
+          <div class="event__details"><a href="/events/culture-camp-2017.html" class="event__details-link">See What Happened ►</a></div>
         </div>
 
         <div class="grid__col is-6 event">
           <h3 class="event__date">Aug</h3>
           <picture>
-            <!-- TODO change picture srcset -->
             <source srcset="assets/img/events/culture-camp-2015-desktop.jpg" media="(min-width: 491px)"/>
             <source srcset="assets/img/events/culture-camp-2015-mobile.jpg" media="(max-width: 490px)"/>
             <img class="media" src="assets/img/events/culture-camp-2015-desktop.jpg" alt="Culture Camp 2015 Image"/>
           </picture>
           <h4 class="event__time">Drums, Paddles</h4>
           <h2 class="event__title">Culture Camp 2015</h2>
-          <!-- TODO link to event page -->
-          <div class="event__details"><a href="#" class="event__details-link">See What Happened ►</a></div>
+          <div class="event__details"><a href="/events/culture-camp-2015.html" class="event__details-link">See What Happened ►</a></div>
         </div>
 
         <div class="grid__col is-12 text-center">
@@ -160,22 +154,21 @@
   <footer class="footer bg--primary">
     <div class="container grid">
       <div class="grid__col is-12--small is-4--medium is-4--large footer__col">
-        <!-- TODO: add activity links -->
         <div class="footer__title">Activities</div>
-        <a href="#activities" onclick="getTabContent('Paddles')">Paddles</a>
+        <a href="#activities" onclick="getActivity('Paddles')">Paddles</a>
         <br>
-        <a href="#activities" onclick="getTabContent('Beads')">Beads</a>
+        <a href="#activities" onclick="getActivity('Beads')">Beads</a>
         <br>
-        <a href="#activities" onclick="getTabContent('Weaving')">Weaving</a>
+        <a href="#activities" onclick="getActivity('Weaving')">Weaving</a>
       </div>
       <div class="grid__col is-12--small is-4--medium is-4--large footer__col">
-        <!-- TODO: add about links -->
+        <!-- TODO: add about link -->
         <div class="footer__title">About</div>
         <a href="#">About Us</a>
         <br>
-        <a href="#">Upcoming Events</a>
+        <a href="./#upcoming-events">Upcoming Events</a>
         <br>
-        <a href="#">Past Events</a>
+        <a href="./#past-events">Past Events</a>
       </div>
       <div class="grid__col is-12--small is-4--medium is-4--large footer__col">
         <div class="footer__title">Contact</div>

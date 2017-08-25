@@ -1,0 +1,15 @@
+.gallery {
+  &__img {
+    max-height: 243px;
+    min-height: 243px;
+    min-width: 100%;
+
+    &:hover {
+      box-shadow: $gallery-img-shadow;
+    }
+  }
+}
+
+.summary {
+  @include content-font;
+}
