@@ -86,6 +86,12 @@ $list-p-w-m: 1.75rem;
       font-size: $icon-font-size;
       content: '\f095';
     }
+
+    &--notify::before {
+      font-family: FontAwesome;
+      font-size: $icon-font-size;
+      content: '\f274';
+    }
   }
 }
 
