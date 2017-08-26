@@ -28,13 +28,18 @@
 
   <main>
     <section class="contact">
-      <div class="container grid grid-center">
-        <div class="grid__col text-center is-12">
-          <a href="#activities"><button class="btn--secondary btn--sharp tab btn--active" onclick="getActivity('Drums')">Drums</button></a>
-          <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getActivity('Paddles')">Paddles</button></a>
-          <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getActivity('Beads')">Beads</button></a>
-          <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getActivity('Weaving')">Weaving</button></a>
-          <!-- <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getActivity('Bags')">Bags</button></a> -->
+      <div class="container grid">
+        <form class="grid__col is-4" method="POST" action="http://formspree.io/calaskacc@gmail.com">
+          <input name="name" placeholder="Your Name" type="text">
+          <input name="email" placeholder="Your Email" type="email">
+          <textarea name="message" placeholder="Your Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <div class="grid__col is-8">
+          <div class="media--embed">
+            <iframe src="https://maps.google.com/maps?q=208%20Jackson%20Blvd%20Exd%20Isleton%2C%20CA&t=&z=12&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          </div>
         </div>
       </div>
     </section>
@@ -46,16 +51,17 @@
     <div class="container grid">
       <div class="grid__col is-12--small is-4--medium is-4--large footer__col">
         <div class="footer__title">Activities</div>
-        <a href="#activities" onclick="getActivity('Paddles')">Paddles</a>
+        <a href="./activities.html#drums">Drum Making</a>
         <br>
-        <a href="#activities" onclick="getActivity('Beads')">Beads</a>
+        <a href="./activities.html#paddles">Paddle Carving</a>
         <br>
-        <a href="#activities" onclick="getActivity('Weaving')">Weaving</a>
+        <a href="./activities.html#beads">Beading</a>
+        <br>
+        <a href="./activities.html#weaving">Weaving</a>
       </div>
       <div class="grid__col is-12--small is-4--medium is-4--large footer__col">
-        <!-- TODO: add about link -->
         <div class="footer__title">About</div>
-        <a href="#">About Us</a>
+        <a href="./about.html">About Us</a>
         <br>
         <a href="./#upcoming-events">Upcoming Events</a>
         <br>

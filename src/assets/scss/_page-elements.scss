@@ -39,11 +39,11 @@
   padding-top: 1rem;
 
   &--odd {
-    background: lighten($color-primary, 35);
+    background: lighten($color-secondary, 45);
   }
 
   &--even {
-    background: lighten($color-secondary, 45);
+    background: lighten($color-primary, 35);
   }
 
   &__text {
