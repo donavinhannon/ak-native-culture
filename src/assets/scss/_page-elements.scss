@@ -37,7 +37,6 @@
 
 .activity {
   padding-bottom: 3rem;
-  padding-top: 1rem;
 
   &--odd {
     background: lighten($color-secondary, 45);
@@ -61,7 +60,6 @@
 
 .about {
   padding-bottom: 5rem;
-  padding-top: 5rem;
 
   &--donna {
     border-top-color: $color-secondary !important;
