@@ -16,10 +16,10 @@
     <nav class="nav container">
       <ul class="grid grid-5--small grid-5--medium grid-5--large">
         <a class="grid__col nav__item" href="/"><li>Home</li></a>
-        <a class="grid__col nav__item" href="../about/"><li>About</li></a>
+        <a class="grid__col nav__item" href="../about.html"><li>About</li></a>
         <a class="grid__col nav__item" href="../events/"><li>Events</li></a>
-        <a class="grid__col nav__item" href="#activities"><li>Activities</li></a>
-        <a class="grid__col nav__item" href="../contact/"><li>Contact</li></a>
+        <a class="grid__col nav__item" href="../activities.html"><li>Activities</li></a>
+        <a class="grid__col nav__item" href="../contact.html"><li>Contact</li></a>
       </ul>
     </nav>
     <h1 class="hero__title">Contact</h1>
@@ -27,13 +27,19 @@
   </header>
 
   <main>
-    <section class="container grid">
-      <form method="POST" action="http://formspree.io/calaskacc@gmail.com">
-        <input name="email" placeholder="Your email" type="email">
-        <textarea name="message" placeholder="Your message"></textarea>
-        <button type="submit">Send</button>
-      </form>
+    <section class="contact">
+      <div class="container grid grid-center">
+        <div class="grid__col text-center is-12">
+          <a href="#activities"><button class="btn--secondary btn--sharp tab btn--active" onclick="getActivity('Drums')">Drums</button></a>
+          <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getActivity('Paddles')">Paddles</button></a>
+          <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getActivity('Beads')">Beads</button></a>
+          <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getActivity('Weaving')">Weaving</button></a>
+          <!-- <a href="#activities"><button class="btn--secondary btn--sharp tab" onclick="getActivity('Bags')">Bags</button></a> -->
+        </div>
+      </div>
     </section>
+
+
   </main>
 
   <footer class="footer bg--primary">

@@ -92,12 +92,3 @@
 .panel {
   padding-bottom: $padding-section-bottom;
 }
-
-.activity {
-  &__text {
-    @include content-font;
-    color: $color-font-dark-bg;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-}
