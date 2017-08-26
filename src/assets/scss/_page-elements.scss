@@ -28,10 +28,11 @@
 .contact {
   padding-bottom: 2rem;
   padding-top: 2rem;
-}
 
-.activity {
-
+  &__title {
+    @include heading-font;
+    text-align: center;
+  }
 }
 
 .activity {
@@ -55,5 +56,23 @@
     &--activities {
       color: $color-font-light-bg;
     }
+  }
+}
+
+.about {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+
+  &--donna {
+    border-top-color: $color-secondary !important;
+    border-top: .5rem;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+  }
+
+  &__text {
+    @include content-font;
   }
 }

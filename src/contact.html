@@ -29,12 +29,15 @@
   <main>
     <section class="contact">
       <div class="container grid">
-        <form class="grid__col is-4" method="POST" action="http://formspree.io/calaskacc@gmail.com">
-          <input name="name" placeholder="Your Name" type="text">
-          <input name="email" placeholder="Your Email" type="email">
-          <textarea name="message" placeholder="Your Message"></textarea>
-          <button type="submit">Send</button>
-        </form>
+        <div class="grid__col is-4">
+          <h3 class="contact__title">Contact Form</h3>
+          <form method="POST" action="http://formspree.io/calaskacc@gmail.com">
+            <input name="name" placeholder="Your Name" type="text">
+            <input name="email" placeholder="Your Email" type="email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
         <div class="grid__col is-8">
           <div class="media--embed">
             <iframe src="https://maps.google.com/maps?q=208%20Jackson%20Blvd%20Exd%20Isleton%2C%20CA&t=&z=12&ie=UTF8&iwloc=&output=embed"
