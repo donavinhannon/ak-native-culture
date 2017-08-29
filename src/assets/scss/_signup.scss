@@ -6,6 +6,7 @@
   &__title {
     @include heading-font;
     color: $color-font-dark-bg;
+    font-size: 1.953rem;
     text-align: center;
   }
 
