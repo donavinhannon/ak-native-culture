@@ -42,6 +42,11 @@
     background: $color-background-activities;
     background-size: cover;
   }
+
+  &--event {
+    background: lighten($color-primary, 35);
+    background-size: cover;
+  }
 }
 
 .btn {
