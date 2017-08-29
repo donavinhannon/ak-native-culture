@@ -1,3 +1,4 @@
+/* exported getJson*/
 function getJson(url, callback) {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = () => {
@@ -8,6 +9,7 @@ function getJson(url, callback) {
     xhr.send(null);
 }
 
+/* exported getActivity*/
 function getActivity(tabName) {
     const Activity = {
         'Drums': {
@@ -62,10 +64,4 @@ function parseActivity(o, tabName) {
     const tabContentHtml = document.getElementById('tab-content');
     tabContentHtml.innerHTML = '<div class="container grid"><div class="grid__col is-12"><p class="activity__text">' + results.text + '</p></div><div class="grid__col text-center is-12--small is-4--medium is-4--large"><img class="media" src="' + results.desktopImg1 + '" alt="' + tabName + ' Picture 1"></div><div class="grid__col text-center is-12--small is-4--medium is-4--large"><img class="media" src="' + results.desktopImg2 + '" alt="' + tabName + ' Picture 2"></div><div class="grid__col text-center is-12--small is-4--medium is-4--large"><img class="media" src="' + results.desktopImg3 + '" alt="' + tabName + ' Picture 3"></div></div>';
 
-}
-
-
-function delayActivity(tabName) {
-    const delay = 2500;
-    setTimeout(getActivity(tabName),delay);
 }
