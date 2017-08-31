@@ -63,7 +63,7 @@
 
   &--donna {
     border-top-color: $color-secondary !important;
-    border-top: .5rem;
+    border-top: 6px;
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
@@ -72,5 +72,11 @@
 
   &__text {
     @include content-font;
+  }
+}
+
+.event-details {
+  th {
+    padding-left: .25rem;
   }
 }
