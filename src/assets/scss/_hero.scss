@@ -36,6 +36,8 @@
   &__sub-title {
     @include content-font;
     color: $white;
+    padding-left: .25rem;
+    padding-right: .25rem;
     text-align: center;
 
     // unvisited link

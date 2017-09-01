@@ -62,12 +62,12 @@
   padding-bottom: 5rem;
 
   &--donna {
-    border-top-color: $color-secondary !important;
-    border-top: 6px;
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
     border-style: solid;
+    border-top: 6px;
+    border-top-color: $color-secondary !important;
   }
 
   &__text {
@@ -76,6 +76,8 @@
 }
 
 .event-details {
+  padding-bottom: 2.5rem;
+
   th {
     padding-left: .25rem;
   }
