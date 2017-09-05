@@ -13,7 +13,7 @@ function getJson(url, callback) {
 function getActivity(tabName) {
     const Activity = {
         'Drums': {
-            'text': 'Paragraph about making drums',
+            'text': '',
             'desktopImg1': 'assets/img/ccc-2017/active/drums-17.jpg',
             'desktopImg2': 'assets/img/ccc-2017/active/drums-2.jpg',
             'desktopImg3': 'assets/img/ccc-2017/active/drums-5.jpg',
@@ -22,7 +22,7 @@ function getActivity(tabName) {
             'mobileImg3': 'assets/img/drums-mobile-3.jpg'
         },
         'Paddles': {
-            'text': 'Paragraph about making paddles',
+            'text': '',
             'desktopImg1': 'assets/img/ccc-2017/active/paddles-2.jpg',
             'desktopImg2': 'assets/img/ccc-2017/active/paddles-7.jpg',
             'desktopImg3': 'assets/img/ccc-2015/active/2015-culture-camp-18.jpg',
@@ -31,7 +31,7 @@ function getActivity(tabName) {
             'mobileImg3': 'assets/img/paddles-mobile-3.jpg'
         },
         'Beads': {
-            'text': 'Paragraph about making beads',
+            'text': '',
             'desktopImg1': 'assets/img/ccc-2015/active/2015-culture-camp-24.jpg',
             'desktopImg2': 'assets/img/ccc-2015/active/2015-culture-camp-23.jpg',
             'desktopImg3': 'assets/img/ccc-2017/active/beads-1.jpg',
@@ -40,7 +40,7 @@ function getActivity(tabName) {
             'mobileImg3': 'assets/img/beads-mobile-3.jpg'
         },
         'Weaving': {
-            'text': 'Paragraph about making weaving',
+            'text': '',
             'desktopImg1': 'assets/img/ccc-2017/active/weaving-4.jpg',
             'desktopImg2': 'assets/img/ccc-2017/active/weaving-3.jpg',
             'desktopImg3': 'assets/img/ccc-2017/active/weaving-5.jpg',
