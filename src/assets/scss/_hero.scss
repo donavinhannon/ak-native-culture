@@ -1,8 +1,12 @@
 .hero {
   background-size: cover;
   height: 100%;
-  padding-bottom: $hero-vertical-padding;
+  padding-bottom: $hero-vertical-padding-mobile;
   width: 100%;
+
+  @media only screen and (min-width: 768px) {
+    padding-bottom: $hero-vertical-padding-desktop;
+  }
 
   &--west {
     background: linear-gradient(transparentize($black, .7), transparentize($black, .7)),
@@ -24,12 +28,16 @@
     color: $white;
     font-size: 4rem;
     letter-spacing: .07em;
-    padding-top: $hero-vertical-padding;
+    padding-top: $hero-vertical-padding-mobile;
     text-align: center;
     text-transform: uppercase;
 
     &--pages {
       font-size: 4rem;
+    }
+
+    @media only screen and (min-width: 768px) {
+      padding-top: $hero-vertical-padding-desktop;
     }
   }
 
