@@ -13,7 +13,7 @@ function getJson(url, callback) {
 function getActivity(tabName) {
     const Activity = {
         'Drums': {
-            'text': '',
+            'text': 'A 10 inch round deerskin rawhide leather round is used to form the drum. Once the holes are pounded into the leather, round wooden frames are placed on the table to stretch the hide.  A leather lace is stretched and ready at this time to start lacing the drum together weaving in and out of the drums.',
             'desktopImg1': 'assets/img/ccc-2017/active/drums-17.jpg',
             'desktopImg2': 'assets/img/ccc-2017/active/drums-2.jpg',
             'desktopImg3': 'assets/img/ccc-2017/active/drums-5.jpg',
@@ -22,7 +22,7 @@ function getActivity(tabName) {
             'mobileImg3': 'assets/img/drums-mobile-3.jpg'
         },
         'Paddles': {
-            'text': '',
+            'text': 'Paddles are cut into shape prior to class to help the students to be able to complete their them during this one day affair.  Bench planes are used to shave the boards down to form the paddles.  As the paddles get shaped the students finish by sanding all the edges.  Last but not least a pattern can be placed on the paddle and painted to precise precision.',
             'desktopImg1': 'assets/img/ccc-2017/active/paddles-2.jpg',
             'desktopImg2': 'assets/img/ccc-2017/active/paddles-7.jpg',
             'desktopImg3': 'assets/img/ccc-2015/active/2015-culture-camp-18.jpg',
@@ -31,7 +31,7 @@ function getActivity(tabName) {
             'mobileImg3': 'assets/img/paddles-mobile-3.jpg'
         },
         'Beads': {
-            'text': '',
+            'text': 'Devil’s club is a very spiritual and medicinal plant used throughout Native Alaskan cultures. For our class it is gathered in Alaska and Washington by friends and family.  The outer bark is peeled off being careful of the sharp needle like thorns. Bead shapes are cut from the limbs and holes are drilled out by taking the innermost  part of the bead out. Students then place glass, plastic, and devil’s club beads on leather necklaces.',
             'desktopImg1': 'assets/img/ccc-2015/active/2015-culture-camp-24.jpg',
             'desktopImg2': 'assets/img/ccc-2015/active/2015-culture-camp-23.jpg',
             'desktopImg3': 'assets/img/ccc-2017/active/beads-1.jpg',
@@ -40,7 +40,7 @@ function getActivity(tabName) {
             'mobileImg3': 'assets/img/beads-mobile-3.jpg'
         },
         'Weaving': {
-            'text': '',
+            'text': 'Alaskan and Washington red and yellow cedar is prepared prior to the Culture Camp.  Students are able to make a traditional cedar bark basket with instruction of a Native weaver. ',
             'desktopImg1': 'assets/img/ccc-2017/active/weaving-4.jpg',
             'desktopImg2': 'assets/img/ccc-2017/active/weaving-3.jpg',
             'desktopImg3': 'assets/img/ccc-2017/active/weaving-5.jpg',
