@@ -58,27 +58,14 @@
   }
 }
 
-.about {
-  padding-bottom: 5rem;
-
-  &--donna {
-    border-bottom: 0;
-    border-left: 0;
-    border-right: 0;
-    border-style: solid;
-    border-top: 6px;
-    border-top-color: $color-secondary !important;
-  }
-
-  &__text {
-    @include content-font;
-  }
-}
-
 .event-details {
   padding-bottom: 2.5rem;
 
   th {
     padding-left: .25rem;
   }
+}
+
+.content-text {
+  @include content-font;
 }
