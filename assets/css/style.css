@@ -123,6 +123,29 @@
   .signup__input {
     color: #E8BD2D; }
 
+.about {
+  padding-bottom: 5rem; }
+  .about--donna {
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-top: 6px;
+    border-top-color: #E8BD2D !important; }
+  .about__text {
+    font-family: 'Montserrat', sans-serif; }
+
+.about-subtitle {
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 0;
+  margin-top: 4rem;
+  padding-bottom: 0;
+  padding-top: 0;
+  text-transform: uppercase; }
+  .about-subtitle--light-bg {
+    color: #6FA646;
+    text-decoration: underline; }
+
 .event__date {
   font-family: 'Montserrat', sans-serif;
   background: #6FA646;
@@ -211,22 +234,13 @@
     .activity__text--activities {
       color: #333; }
 
-.about {
-  padding-bottom: 5rem; }
-  .about--donna {
-    border-bottom: 0;
-    border-left: 0;
-    border-right: 0;
-    border-style: solid;
-    border-top: 6px;
-    border-top-color: #E8BD2D !important; }
-  .about__text {
-    font-family: 'Montserrat', sans-serif; }
-
 .event-details {
   padding-bottom: 2.5rem; }
   .event-details th {
     padding-left: .25rem; }
+
+.content-text {
+  font-family: 'Montserrat', sans-serif; }
 
 @font-face {
   font-family: 'FontAwesome';
