@@ -1,0 +1,30 @@
+.about {
+  padding-bottom: 5rem;
+
+  &--donna {
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-top: 6px;
+    border-top-color: $color-secondary !important;
+  }
+
+  &__text {
+    @include content-font;
+  }
+}
+
+.about-subtitle {
+  @include heading-font;
+  margin-bottom: $about-subtitle-margin-bottom;
+  margin-top: $about-subtitle-margin-top;
+  padding-bottom: $about-subtitle-padding;
+  padding-top: $about-subtitle-padding;
+  text-transform: uppercase;
+
+  &--light-bg {
+    color: $color-primary;
+    text-decoration: underline;
+  }
+}
