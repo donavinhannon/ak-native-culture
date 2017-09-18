@@ -55,7 +55,61 @@
           <tr class="grid">
             <th class="grid__col is-2">Cost:</th>
             <td class="grid__col is-2">$30</td>
-            <td class="grid__col is-8">SOLD OUT!</td>
+            <td class="grid__col is-8">
+              <div id="paypal-button-container"></div>
+
+              <script>
+                  paypal.Button.render({
+
+                      env: 'production', // sandbox | production
+
+
+                      // Specify the style of the button
+
+                      style: {
+                          label: 'pay',
+                          size:  'small', // small | medium | large | responsive
+                          shape: 'rect',   // pill | rect
+                          color: 'gold'   // gold | blue | silver | black
+                      },
+                      // PayPal Client IDs - replace with your own
+                      // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+                      client: {
+                          sandbox:    'AQ4H5Fx6Tr_uIVMLwlat2AbOIuIjSWfnx3sUcAmkDGRcjCJy9VscFsQt9P3JrOKkNqObdNKR5Z5FVon7',
+                          production: 'Ae6xUrF9xyRFJ2Mhb_19rqV1Om_-cLs1BvIV_iPNcsLXHc0Mo2rw7WdkKEPleIGzKxW7HANvCfDIv7U2'
+                      },
+
+                      // Show the buyer a 'Pay Now' button in the checkout flow
+                      commit: true,
+
+                      // payment() is called when the button is clicked
+                      payment: function(data, actions) {
+
+                          // Make a call to the REST api to create the payment
+                          return actions.payment.create({
+                              payment: {
+                                  transactions: [
+                                      {
+                                          amount: { total: '30.00', currency: 'USD' }
+                                      }
+                                  ]
+                              }
+                          });
+                      },
+
+                      // onAuthorize() is called when the buyer approves the payment
+                      onAuthorize: function(data, actions) {
+
+                          // Make a call to the REST api to execute the payment
+                          return actions.payment.execute().then(function() {
+                              window.alert('Payment Complete! We\'ll see you October 6th.');
+                          });
+                          }
+
+                  }, '#paypal-button-container')    ;
+
+              </script>
+            </td>
           </tr>
         </table>
       </div>
@@ -68,23 +122,6 @@
       </div>
 
     </section>
-
-    <!-- <section class="summary">
-      <div class="container grid">
-          <h2 class="grid__col text-center section-title section-title--light-bg">Event Summary</h2>
-      </div>
-      <div class="container grid">
-        <div class="grid__col is-12">
-          <p class="summary__text"></p>
-          <p class="summary__text"></p>
-          <p class="summary__text"></p>
-          <p class="summary__text"></p>
-          <p class="summary__text"></p>
-          <p class="summary__text"></p>
-          <p class="summary__text">&emsp;-</p>
-        </div>
-      </div>
-    </section> -->
   </main>
 
   <footer class="footer bg--primary">
