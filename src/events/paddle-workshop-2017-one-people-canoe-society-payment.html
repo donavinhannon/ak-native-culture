@@ -41,21 +41,24 @@
             </td>
           </tr>
           <tr class="grid">
-            <th class="grid__col is-2">What:</th>
-            <td class="grid__col is-10">3 Day Paddle Making Workshop led by Doug Chilton and JZ</td>
+            <th class="grid__col is-3">What:</th>
+            <td class="grid__col is-9">3 Day Paddle Making Workshop led by Doug Chilton and JZ</td>
           </tr>
           <tr class="grid">
-            <th class="grid__col is-2">When:</th>
-            <td class="grid__col is-10">Fri October 6, 2017; 10AM - 5PM<br />Sat October 7, 2107; 10AM - 5PM<br />Sun October 8, 2017; 10AM - 5PM</td>
+            <th class="grid__col is-3">When:</th>
+            <td class="grid__col is-9">Fri October 6, 2017; 10AM - 5PM<br />Sat October 7, 2107; 10AM - 5PM<br />Sun October 8, 2017; 10AM - 5PM</td>
           </tr>
           <tr class="grid">
-            <th class="grid__col is-2">Where:</th>
-            <td class="grid__col is-10">Isleton Community Center<br />210 Jackson Blvd Exd, Isleton, CA</td>
+            <th class="grid__col is-3">Where:</th>
+            <td class="grid__col is-9">Isleton Community Center<br />210 Jackson Blvd Exd, Isleton, CA</td>
           </tr>
           <tr class="grid">
-            <th class="grid__col is-2">Cost:</th>
-            <td class="grid__col is-2">$30</td>
-            <td class="grid__col is-8">
+            <th class="grid__col is-3">Cost:</th>
+            <td class="grid__col is-9">$30 per person</td>
+          </tr>
+          <tr class="grid">
+            <th class="grid__col is-3">Payment Options:</th>
+            <td class="grid__col is-6">1 Person $30
               <div id="paypal-button-container"></div>
 
               <script>
@@ -107,6 +110,116 @@
                           }
 
                   }, '#paypal-button-container')    ;
+
+              </script>
+              <br>
+              2 People: $60
+              <div id="paypal-button-container-2"></div>
+
+              <script>
+                  paypal.Button.render({
+
+                      env: 'production', // sandbox | production
+
+
+                      // Specify the style of the button
+
+                      style: {
+                          label: 'pay',
+                          size:  'small', // small | medium | large | responsive
+                          shape: 'rect',   // pill | rect
+                          color: 'gold'   // gold | blue | silver | black
+                      },
+                      // PayPal Client IDs - replace with your own
+                      // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+                      client: {
+                          sandbox:    'AQ4H5Fx6Tr_uIVMLwlat2AbOIuIjSWfnx3sUcAmkDGRcjCJy9VscFsQt9P3JrOKkNqObdNKR5Z5FVon7',
+                          production: 'Ae6xUrF9xyRFJ2Mhb_19rqV1Om_-cLs1BvIV_iPNcsLXHc0Mo2rw7WdkKEPleIGzKxW7HANvCfDIv7U2'
+                      },
+
+                      // Show the buyer a 'Pay Now' button in the checkout flow
+                      commit: true,
+
+                      // payment() is called when the button is clicked
+                      payment: function(data, actions) {
+
+                          // Make a call to the REST api to create the payment
+                          return actions.payment.create({
+                              payment: {
+                                  transactions: [
+                                      {
+                                          amount: { total: '60.00', currency: 'USD' }
+                                      }
+                                  ]
+                              }
+                          });
+                      },
+
+                      // onAuthorize() is called when the buyer approves the payment
+                      onAuthorize: function(data, actions) {
+
+                          // Make a call to the REST api to execute the payment
+                          return actions.payment.execute().then(function() {
+                              window.alert('Payment Complete! We\'ll see you October 6th.');
+                          });
+                          }
+
+                  }, '#paypal-button-container-2')    ;
+
+              </script>
+              <br>
+              3 People: $90
+              <div id="paypal-button-container-3"></div>
+
+              <script>
+                  paypal.Button.render({
+
+                      env: 'production', // sandbox | production
+
+
+                      // Specify the style of the button
+
+                      style: {
+                          label: 'pay',
+                          size:  'small', // small | medium | large | responsive
+                          shape: 'rect',   // pill | rect
+                          color: 'gold'   // gold | blue | silver | black
+                      },
+                      // PayPal Client IDs - replace with your own
+                      // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+                      client: {
+                          sandbox:    'AQ4H5Fx6Tr_uIVMLwlat2AbOIuIjSWfnx3sUcAmkDGRcjCJy9VscFsQt9P3JrOKkNqObdNKR5Z5FVon7',
+                          production: 'Ae6xUrF9xyRFJ2Mhb_19rqV1Om_-cLs1BvIV_iPNcsLXHc0Mo2rw7WdkKEPleIGzKxW7HANvCfDIv7U2'
+                      },
+
+                      // Show the buyer a 'Pay Now' button in the checkout flow
+                      commit: true,
+
+                      // payment() is called when the button is clicked
+                      payment: function(data, actions) {
+
+                          // Make a call to the REST api to create the payment
+                          return actions.payment.create({
+                              payment: {
+                                  transactions: [
+                                      {
+                                          amount: { total: '90.00', currency: 'USD' }
+                                      }
+                                  ]
+                              }
+                          });
+                      },
+
+                      // onAuthorize() is called when the buyer approves the payment
+                      onAuthorize: function(data, actions) {
+
+                          // Make a call to the REST api to execute the payment
+                          return actions.payment.execute().then(function() {
+                              window.alert('Payment Complete! We\'ll see you October 6th.');
+                          });
+                          }
+
+                  }, '#paypal-button-container-3')    ;
 
               </script>
             </td>
