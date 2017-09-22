@@ -10,15 +10,17 @@
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    height: 2.25em;
+    height: 2.25rem;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
     line-height: 1.5;
-    padding-bottom: calc(0.375em - 1px);
-    padding-left: calc(0.625em - 1px);
-    padding-right: calc(0.625em - 1px);
-    padding-top: calc(0.375em - 1px);
+    margin-bottom: calc(.15rem);
+    margin-top: calc(.15rem);
+    padding-bottom: calc(0.375rem - 1px);
+    padding-left: calc(0.625rem - 1px);
+    padding-right: calc(0.625rem - 1px);
+    padding-top: calc(0.375rem - 1px);
     position: relative;
     vertical-align: top;
     -webkit-touch-callout: none;
@@ -31,12 +33,12 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     text-align: center;
     white-space: nowrap;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .btn{
