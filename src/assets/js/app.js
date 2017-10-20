@@ -56,10 +56,10 @@ function getActivity(tabName) {
 function parseActivity(o, tabName) {
     let results = o.Drums;
     if (tabName == 'Paddles') {results = o.Paddles;}
-    if (tabName == 'Moccasins') {results = o.Moccasins;}
-    if (tabName == 'Beads') {results = o.Beads;}
-    if (tabName == 'Weaving') {results = o.Weaving;}
-    if (tabName == 'Bags') {results = o.Bags;}
+    else if (tabName == 'Moccasins') {results = o.Moccasins;}
+    else if (tabName == 'Beads') {results = o.Beads;}
+    else if (tabName == 'Weaving') {results = o.Weaving;}
+    else if (tabName == 'Bags') {results = o.Bags;}
 
 
     const tabContentHtml = document.getElementById('tab-content');
