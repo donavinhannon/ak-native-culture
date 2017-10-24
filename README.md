@@ -1,4 +1,4 @@
-# [CAlaska.org](https://www.calaska.org/)
+# [CAlaska.org](https://www.calaska.org/?utm_source=github-repo&utm_medium=readme)
 Website for the CAlaska Culture, a non-profit that teaches Alaska Native cultural activities in Northern California.
 
 ## Technologies Used
@@ -17,7 +17,7 @@ Website for the CAlaska Culture, a non-profit that teaches Alaska Native cultura
 * Fully responsive layout at all screen resolutions
 * Minimal js for faster loading
 * jQuery only loaded on pages with image gallery
-* Custom JS tabs ([activity section on homepage](https://www.calaska.org/#activity))
+* Custom JS tabs ([activity section on homepage](https://www.calaska.org/?utm_source=github-repo&utm_medium=readme#activity))
 
 ## Page Speed Analysis
 PageSpeed Insights Mobile 71/100, Desktop 89/100    |    GTMetrix 99%   |   Pingdom 96%
