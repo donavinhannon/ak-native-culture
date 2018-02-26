@@ -69,3 +69,7 @@
 .content-text {
   @include content-font;
 }
+
+.select-container {
+  padding-bottom: .5rem;
+}
