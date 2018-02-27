@@ -241,6 +241,8 @@
 
 .content-text {
   font-family: 'Montserrat', sans-serif; }
+  .content-text ol > li {
+    margin-left: 1rem; }
 
 .select-container {
   padding-bottom: .5rem; }
