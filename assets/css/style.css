@@ -242,6 +242,9 @@
 .content-text {
   font-family: 'Montserrat', sans-serif; }
 
+.select-container {
+  padding-bottom: .5rem; }
+
 @font-face {
   font-family: 'FontAwesome';
   src: url("../font/fontello.woff2") format("woff2"), url("../font/fontello.woff") format("woff"); }
@@ -887,7 +890,7 @@ small,
   border-radius: 0; }
 
 /*******************************FORMS*******************************/
-input:not([type=submit]):not([type=button]), textarea, select {
+input:not([type=submit]):not([type=button]), textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
   -webkit-box-align: center;
