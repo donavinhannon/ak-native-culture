@@ -68,6 +68,9 @@
 
 .content-text {
   @include content-font;
+  ol>li {
+    margin-left: 1rem;
+  }
 }
 
 .select-container {
