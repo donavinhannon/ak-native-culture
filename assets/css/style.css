@@ -247,6 +247,15 @@
 .select-container {
   padding-bottom: .5rem; }
 
+.success-text {
+  border-color: #6FA646;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px; }
+
 @font-face {
   font-family: 'FontAwesome';
   src: url("../font/fontello.woff2") format("woff2"), url("../font/fontello.woff") format("woff"); }
