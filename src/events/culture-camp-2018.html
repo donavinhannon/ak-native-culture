@@ -68,7 +68,6 @@
 
             <p>
                 Dinner to follow at 5:30pm with Haida name giving and Southern Winds Dance Group performing. Free -- any donations will go to Southern Winds Dance Group.
-
             </p>
                 
         </div>
@@ -98,7 +97,7 @@
             <tr class="grid">
               <th class="grid__col is-3">Payment Options:</th>
               <td class="grid__col is-9">
-                  <!-- Specify different payment options for each event -->
+                  <!-- Specify different payment options for each number of people -->
                   <div class="select-container">
                         <select id="numPeople" name="numPeople">
                             <option value="40.00">1 Person - $40</option> 
@@ -113,7 +112,7 @@
             <script>
                 paypal.Button.render({
 
-                    env: 'production', // sandbox | production
+                    env: 'sandbox', // sandbox | production
 
 
                     // Specify the style of the button
@@ -147,6 +146,13 @@
                                         amount: { total: cost, currency: 'USD' }
                                     }
                                 ]
+                            },
+                            
+                            // Do not collect shipping address
+                            experience: {
+                              input_fields: {
+                                no_shipping: 1
+                              }
                             }
                         });
                     },
@@ -156,7 +162,10 @@
 
                         // Make a call to the REST api to execute the payment
                         return actions.payment.execute().then(function () {
-                            window.alert('Payment Complete! We\'ll see you March 24th.');
+                            var successText = 'Payment Complete! We\'ll see you March 24th.';
+                            window.alert(successText);
+                            document.getElementById('paypal-button-container').innerText = successText;
+                            document.getElementById('paypal-button-container').classList.add('success-text');
                         });
                     }
 
@@ -171,7 +180,7 @@
   
         <div class="grid__col is-12">
           <div class="media--embed">
-            <iframe src="https://www.google.com/maps/embed/v1/place?q=210+Jackson+Blvd+Exd,+Isleton,+CA,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            <iframe id='gMap' src=""
             frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
           </div>
         </div>
@@ -210,28 +219,11 @@
     </div>
   </footer>
 
-  <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
-  <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <div class="slides"></div>
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"></ol>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="../assets/js/blueimp-gallery.min.js"></script>
   <script>
-  document.getElementById('links').onclick = function (event) {
-    event = event || window.event;
-    var target = event.target || event.srcElement,
-    link = target.src ? target.parentNode : target,
-    options = {index: link, event: event},
-    links = this.getElementsByTagName('a');
-    blueimp.Gallery(links, options);
-  };
+    window.addEventListener('load', window.setTimeout(
+      document.getElementById('gMap').src = 'https://www.google.com/maps/embed/v1/place?q=210+Jackson+Blvd+Exd,+Isleton,+CA,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8'
+      , 1000));
+  
   </script>
 
 </body>

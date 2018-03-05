@@ -76,3 +76,13 @@
 .select-container {
   padding-bottom: .5rem;
 }
+
+.success-text {
+  border-color: $color-primary;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+}
