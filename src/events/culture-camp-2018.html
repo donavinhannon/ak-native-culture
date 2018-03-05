@@ -112,7 +112,7 @@
             <script>
                 paypal.Button.render({
 
-                    env: 'sandbox', // sandbox | production
+                    env: 'production', // sandbox | production
 
 
                     // Specify the style of the button
@@ -179,9 +179,8 @@
         </div>
   
         <div class="grid__col is-12">
-          <div class="media--embed">
-            <iframe id='gMap' src=""
-            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          <div id='gMap' class="media--embed">
+            
           </div>
         </div>
   
@@ -220,9 +219,19 @@
   </footer>
 
   <script>
-    window.addEventListener('load', window.setTimeout(
-      document.getElementById('gMap').src = 'https://www.google.com/maps/embed/v1/place?q=210+Jackson+Blvd+Exd,+Isleton,+CA,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8'
-      , 1000));
+    // Defer loading of gMap
+    window.addEventListener('load', function(){
+      window.setTimeout(function(){
+        var element = document.getElementById('gMap');
+        var frame = document.createElement('iframe');
+        frame.src = 'https://www.google.com/maps/embed/v1/place?q=210+Jackson+Blvd+Exd,+Isleton,+CA,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8';
+        frame.frameBorder = '0';
+        frame.scrolling = 'no';
+        frame.marginHeight = '0';
+        frame.marginWidth = '0';
+        element.appendChild(frame);         
+      },1000) // Timeout length
+    });
   
   </script>
 
