@@ -256,6 +256,12 @@
   padding-left: 5px;
   padding-right: 5px; }
 
+.color-primary {
+  color: #578237; }
+
+.color-secondary {
+  color: #E8BD2D; }
+
 @font-face {
   font-family: 'FontAwesome';
   src: url("../font/fontello.woff2") format("woff2"), url("../font/fontello.woff") format("woff"); }
