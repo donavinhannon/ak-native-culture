@@ -49,30 +49,9 @@
         <div class="grid__col is-12">
           <h2 class="text-center section-title section-title--light-bg">Event Details</h2>
         </div>
-        <div class="grid__col is-12 content-text">
-            <p>
-                Please be ready to choose your projects due to the limited time we have. All participants will go home with a drum and drumstick plus two projects. 
-            </p>
-            <ol>
-                <li>Deer skin Drum with Donavin Hannon and Ryan Kozisek</li>
-                <li>Drum Stick</li>
-                <li>Small Paddle</li>
-                <li>Native Art with Tlingit Artist <b>Doug Chilton from Juneau, Alaska</b></li>
-                <li>Beading project with Natalie Suan and Barbara Nix</li>
-                <li>Headdress, Octopus Bag with Robin Montano</li>
-                <li>Devils Club Beaded necklace</li>
-                <li>Haida Language by <b>Rob Yates from Creswell, Oregon (Craig, Alaska)</b></li>
-                <li>Weaving Project with Marilyn Nix</li>
-            </ol>
-
-
-            <p>
-                Dinner to follow at 5:30pm with Haida name giving and Southern Winds Dance Group performing. Free -- any donations will go to Southern Winds Dance Group.
-            </p>
-                
-        </div>
+       
   
-        <div class="grid__col is-6">
+        <div class="grid__col is-6 vertically-center">
           <img class="media" src="../assets/img/events/ccc-2018-desktop.jpg" alt="Culture Camp 2018"/>
         </div>
   
@@ -99,18 +78,34 @@
               <td class="grid__col is-9">
                   <!-- Specify different payment options for each number of people -->
                   <div class="select-container">
-                        <select id="numPeople" name="numPeople">
-                            <option value="40.00">1 Person - $40</option> 
-                            <option value="80.00" selected>2 People - $80</option>
-                            <option value="120.00">3 People - $120</option>
-                            <option value="160.00">4 People - $160</option>
-                            <option value="200.00">5 People - $200</option>
+                        <select id="numPeople" name="numPeople" required>
+                            <option value="1" selected>1 Person - $40</option> 
+                            <option value="2">2 People - $80</option>
+                            <option value="3">3 People - $120</option>
+                            <option value="4">4 People - $160</option>
+                            <option value="5">5 People - $200</option>
                         </select>
                   </div>
                     
               <div id="paypal-button-container">
             <script>
-                paypal.Button.render({
+              function isValid() {
+                return document.querySelector('#check').checked;
+              }
+
+              function onChangeCheckbox(handler) {
+                document.querySelector('#check').addEventListener('change', handler);
+              }
+
+              function toggleValidationMessage() {
+                document.querySelector('#msg').style.display = (isValid() ? 'none' : 'block');
+              }
+
+              function toggleButton(actions) {
+                return isValid() ? actions.enable() : actions.disable();
+              }
+
+              paypal.Button.render({
 
                     env: 'production', // sandbox | production
 
@@ -136,24 +131,39 @@
                     // payment() is called when the button is clicked
                     payment: function (data, actions) {
                         // Get cost of event
-                        var cost = document.getElementById('numPeople').value;
+                        var num_people = document.getElementById('numPeople').value;
+                        var cost = num_people * 40.00;
 
                         // Make a call to the REST api to create the payment
                         return actions.payment.create({
                             payment: {
                                 transactions: [
                                     {
-                                        amount: { total: cost, currency: 'USD' }
+                                        amount: { total: cost, currency: 'USD' },
+                                        description: 'Calaska Culture Camp Tickets',
+                                        item_list: {
+                                          items: [
+                                            {
+                                            name: "Tickets",
+                                            description: "Calaska Culture Camp 2018 tickets.",
+                                            quantity: num_people.toString(),
+                                            price: "40",
+                                            tax: "0.00",
+                                            currency: "USD"
+                                            }
+                                          ]
+                                        },
                                     }
-                                ]
+                                ],
+                                note_to_payer: 'Don\'t forget to bring your ID and $10 cash per household to the event (you will be refunded your $10 if you clean).'
                             },
-                            
                             // Do not collect shipping address
                             experience: {
                               input_fields: {
                                 no_shipping: 1
                               }
                             }
+                        
                         });
                     },
 
@@ -162,7 +172,7 @@
 
                         // Make a call to the REST api to execute the payment
                         return actions.payment.execute().then(function () {
-                            var successText = 'Payment Complete! We\'ll see you March 24th.';
+                            var successText = 'Payment Complete! Please bring your ID to the event. We\'ll see you March 24th.';
                             window.alert(successText);
                             document.getElementById('paypal-button-container').innerText = successText;
                             document.getElementById('paypal-button-container').classList.add('success-text');
@@ -176,6 +186,29 @@
             </td>
             </tr>
           </table>
+        </div>
+
+        <div class="grid__col is-12 content-text">
+            <p>
+                Please be ready to choose your projects due to the limited time we have. <b>Only participants who have paid by March 15th will get to make a drum.</b>
+            </p>
+            <ol>
+                <li>Deer skin Drum with Donavin Hannon and Ryan Kozisek</li>
+                <li>Drum Stick</li>
+                <li>Small Paddle</li>
+                <li>Native Art with Tlingit Artist <b class="color-primary">Doug Chilton from Juneau, Alaska</b></li>
+                <li>Beading project with Natalie Suan and Barbara Nix</li>
+                <li>Headdress, Octopus Bag with Robin Montano</li>
+                <li>Devils Club Beaded necklace</li>
+                <li>Haida Language by <b class="color-primary">Rob Yates from Creswell, Oregon (Craig, Alaska)</b></li>
+                <li>Weaving Project with Marilyn Nix</li>
+            </ol>
+
+
+            <p>
+                Dinner to follow at 5:30pm with Haida name giving and <b class="color-primary">Southern Winds Dance Group</b> performing. Free -- any donations will go to Southern Winds Dance Group.
+            </p>
+                
         </div>
   
         <div class="grid__col is-12">
