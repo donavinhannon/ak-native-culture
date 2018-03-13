@@ -1,7 +1,31 @@
+@charset "UTF-8";
 @font-face {
-  font-family: 'FontAwesome';
-  src: url("../font/fontello.woff2") format("woff2"), url("../font/fontello.woff") format("woff"); }
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?33861163");
+  src: url("../font/fontello.eot?33861163#iefix") format("embedded-opentype"), url("../font/fontello.woff2?33861163") format("woff2"), url("../font/fontello.woff?33861163") format("woff"), url("../font/fontello.ttf?33861163") format("truetype"), url("../font/fontello.svg?33861163#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
+.icon-location:before {
+  content: '\f041'; }
+
+/* '' */
+.icon-phone:before {
+  content: '\f095'; }
+
+/* '' */
+.icon-facebook:before {
+  content: '\f09a'; }
+
+/* '' */
+.icon-calendar:before {
+  content: '\f274'; }
+
+/* '' */
+.icon-email:before {
+  content: '\f2b6'; }
+
+/* '' */
 @media screen and (max-width: 690px) {
   .hero__title {
     padding-left: .1rem;
@@ -313,8 +337,8 @@ button.share-icon {
     background: #3b5998;
     color: #f3f3f3;
     font-size: 18px; }
-    button.share-icon--fb::before {
-      font-family: FontAwesome;
+    button.share-icon--fb:before {
+      font-family: fontello;
       content: '\f09a'; }
     button.share-icon--fb:hover {
       background: #5f7ec1; }
@@ -322,8 +346,8 @@ button.share-icon {
     background: #E8BD2D;
     color: #f3f3f3;
     font-size: 18px; }
-    button.share-icon--email::before {
-      font-family: FontAwesome;
+    button.share-icon--email:before {
+      font-family: fontello;
       content: '\f2b6'; }
     button.share-icon--email:hover {
       background: #f0d372; }
@@ -359,20 +383,20 @@ button.share-icon {
     .footer__col a:active {
       color: #fff;
       text-decoration: none; }
-  .footer__item-icon--address::before {
-    font-family: FontAwesome;
+  .footer__item-icon--address:before {
+    font-family: fontello;
     font-size: 18px;
     content: '\f041'; }
-  .footer__item-icon--email::before {
-    font-family: FontAwesome;
+  .footer__item-icon--email:before {
+    font-family: fontello;
     font-size: 18px;
     content: '\f2b6'; }
-  .footer__item-icon--phone::before {
-    font-family: FontAwesome;
+  .footer__item-icon--phone:before {
+    font-family: fontello;
     font-size: 18px;
     content: '\f095'; }
-  .footer__item-icon--notify::before {
-    font-family: FontAwesome;
+  .footer__item-icon--notify:before {
+    font-family: fontello;
     font-size: 18px;
     content: '\f274'; }
 
@@ -383,7 +407,7 @@ button.share-icon {
     padding: 0; }
     .list-unstyled--fa-icons li {
       padding-left: 1.75rem; }
-    .list-unstyled--fa-icons li::before {
+    .list-unstyled--fa-icons li:before {
       display: inline-block;
       width: 1.75rem;
       margin-left: -1.75rem; }
@@ -913,36 +937,26 @@ small,
 
 /*******************************BUTTONS*******************************/
 .btn, .btn--ghost, .btn--sharp, .btn--ghost--sharp {
-  -moz-appearance: none;
-  -webkit-appearance: none;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-shadow: none;
           box-shadow: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   height: 2.25rem;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
   line-height: 1.5;
-  margin-bottom: calc(.15rem);
-  margin-top: calc(.15rem);
   padding-bottom: calc(0.375rem - 1px);
-  padding-left: calc(0.625rem - 1px);
-  padding-right: calc(0.625rem - 1px);
   padding-top: calc(0.375rem - 1px);
   position: relative;
   vertical-align: top;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #363636;
-  cursor: pointer;
+  cursor: auto;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -952,6 +966,11 @@ small,
   white-space: nowrap;
   text-decoration: none;
   font-size: 1rem; }
+
+@media screen and (max-width: 768px) {
+  .btn, .btn--ghost, .btn--sharp, .btn--ghost--sharp {
+    margin-bottom: .15rem;
+    margin-top: .15rem; } }
 
 .btn {
   background-color: gainsboro;
