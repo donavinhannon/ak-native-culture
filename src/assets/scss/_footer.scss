@@ -48,26 +48,26 @@
   }
 
   &__item-icon {
-    &--address::before {
-      font-family: FontAwesome;
+    &--address:before {
+      font-family: fontello;
       font-size: $icon-font-size;
       content: '\f041';
     }
 
-    &--email::before {
-      font-family: FontAwesome;
+    &--email:before {
+      font-family: fontello;
       font-size: $icon-font-size;
       content: '\f2b6';
     }
 
-    &--phone::before {
-      font-family: FontAwesome;
+    &--phone:before {
+      font-family: fontello;
       font-size: $icon-font-size;
       content: '\f095';
     }
 
-    &--notify::before {
-      font-family: FontAwesome;
+    &--notify:before {
+      font-family: fontello;
       font-size: $icon-font-size;
       content: '\f274';
     }
@@ -85,7 +85,7 @@
       padding-left: $list-p-w-m;
     }
 
-    li::before {
+    li:before {
       display: inline-block;
       width: $list-p-w-m;
       margin-left: -$list-p-w-m;

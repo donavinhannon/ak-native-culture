@@ -210,8 +210,8 @@ button.share-icon {
     color: #f3f3f3;
     font-size: $icon-font-size;
 
-    &::before {
-    font-family: FontAwesome;
+    &:before {
+    font-family: fontello;
     content: '\f09a';
     }
 
@@ -225,8 +225,8 @@ button.share-icon {
     color: #f3f3f3;
     font-size: $icon-font-size;
 
-    &::before {
-    font-family: FontAwesome;
+    &:before {
+    font-family: fontello;
     content: '\f2b6';
     }
 

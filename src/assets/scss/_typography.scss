@@ -3,7 +3,19 @@
 @mixin content-font {font-family: 'Montserrat', sans-serif;}
 
 @font-face {
-    font-family: 'FontAwesome';
-    src:  url('../font/fontello.woff2') format('woff2'),
-          url('../font/fontello.woff') format('woff');
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?33861163');
+    src: url('../font/fontello.eot?33861163#iefix') format('embedded-opentype'),
+         url('../font/fontello.woff2?33861163') format('woff2'),
+         url('../font/fontello.woff?33861163') format('woff'),
+         url('../font/fontello.ttf?33861163') format('truetype'),
+         url('../font/fontello.svg?33861163#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
+.icon-location:before { content: '\f041'; } /* '' */
+.icon-phone:before { content: '\f095'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-calendar:before { content: '\f274'; } /* '' */
+.icon-email:before { content: '\f2b6'; } /* '' */
