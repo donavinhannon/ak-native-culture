@@ -14,6 +14,26 @@
   }
 }
 
+.bg-img {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  &--activities {
+    background: $color-background-activities;
+    background-size: cover;
+  }
+
+  &--event {
+    background: lighten($color-primary, 35);
+    background-size: cover;
+  }
+}
+
+.panel {
+  padding-bottom: $padding-section-bottom;
+}
+
 .section-title {
   @include heading-font;
   padding-bottom: $section-title-padding;
