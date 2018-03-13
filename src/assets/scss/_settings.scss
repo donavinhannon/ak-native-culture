@@ -2,6 +2,7 @@
 // Colors //
 $black: #000;
 $green: #6FA646;
+$red: #AA3939;
 $yellow: #E8BD2D;
 $white: #FFF;
 
@@ -19,8 +20,8 @@ $color-background-activities: lighten($color-primary, 10); // #FF4F4F 3DC5C5   6
 $color-background-event-bottom: darken($white, 7);
 $color-background-signup: lighten($color-secondary, 0);
 $gallery-img-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-$hero-vertical-padding-desktop: 4rem;
-$hero-vertical-padding-mobile: 5rem;
+$hero-vertical-padding-desktop: 3rem;
+$hero-vertical-padding-mobile: 3.5rem;
 $section-title-border-size: 3px;
 $section-title-padding: 1.5rem;
 $padding-section-bottom: 5rem;

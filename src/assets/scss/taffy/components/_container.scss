@@ -22,13 +22,20 @@ body{
   position: relative;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 884px) {
+  .container {
+    margin: 0 auto;
+    max-width: 790px;
+    width: 790px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
   .container {
     margin: 0 auto;
     max-width: 960px;
     width: 960px;
   }
-
 }
 
 @media screen and (min-width: 1192px) {

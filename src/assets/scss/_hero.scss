@@ -1,12 +1,20 @@
+// Mobile Media Queries
+@media screen and (max-width: 690px) {
+  .hero__title {
+    padding-left: .1rem;
+    padding-right: .1rem;
+  }
+  .hero__sub-title {
+    padding-left: .25rem;
+    padding-right: .25rem;
+  }
+}
+
 .hero {
   background-size: cover;
   height: 100%;
   padding-bottom: $hero-vertical-padding-mobile;
   width: 100%;
-
-  @media only screen and (min-width: 768px) {
-    padding-bottom: $hero-vertical-padding-desktop;
-  }
 
   &--west {
     background: linear-gradient(transparentize($black, .7), transparentize($black, .7)),
@@ -35,17 +43,11 @@
     &--pages {
       font-size: 4rem;
     }
-
-    @media only screen and (min-width: 768px) {
-      padding-top: $hero-vertical-padding-desktop;
-    }
   }
 
   &__sub-title {
     @include content-font;
     color: $white;
-    padding-left: .25rem;
-    padding-right: .25rem;
     text-align: center;
 
     // unvisited link

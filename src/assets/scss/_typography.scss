@@ -1,3 +1,9 @@
 @mixin nav-font {font-family: 'Oswald', sans-serif;}
 @mixin heading-font {font-family: 'Oswald', sans-serif;}
 @mixin content-font {font-family: 'Montserrat', sans-serif;}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src:  url('../font/fontello.woff2') format('woff2'),
+          url('../font/fontello.woff') format('woff');
+}

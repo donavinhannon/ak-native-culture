@@ -93,7 +93,7 @@
 
 
 
-@media (min-width : 1000px){
+@media (min-width : 1025px){
 
 .is-75p--large{
   width: calc(75% - (2*.512rem));
@@ -173,7 +173,7 @@
 
 
 
-@media (max-width : 1000px){
+@media (max-width : 1025px){
 
 .is-75p--medium{
   width: calc(75% - (2*.512rem));
@@ -395,7 +395,7 @@
 
 
 
-@media (min-width : 1000px){
+@media (min-width : 1025px){
 
 .grid-1--large>*{
   width: calc(100% - (2*.512rem));
@@ -448,7 +448,7 @@
 }
 
 
-@media (max-width : 1000px){
+@media (max-width : 1025px){
 
 .grid-1--medium>*{
   width: calc(100% - (2*.512rem));
