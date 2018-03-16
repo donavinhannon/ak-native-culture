@@ -331,8 +331,9 @@ button.share-icon {
   color: #fff;
   text-decoration: none;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   text-align: center; }
+  button.share-icon > a {
+    text-decoration: none; }
   button.share-icon--fb {
     background: #3b5998;
     color: #f3f3f3;
