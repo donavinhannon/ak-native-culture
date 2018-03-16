@@ -202,8 +202,11 @@ button.share-icon {
   color: #fff;
   text-decoration: none;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   text-align: center;
+
+  &>a {
+    text-decoration: none;
+  }
 
   &--fb {
     background: #3b5998;
