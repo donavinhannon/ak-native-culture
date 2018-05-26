@@ -24,7 +24,7 @@ var babel         = require('gulp-babel');
 // });
 
 gulp.task('js-minify', function () {
-    return gulp.src('src/assets/js/app.js')
+    return gulp.src('src/assets/js/*.js')
         .pipe(plumber())
         .pipe(babel())
         .pipe(sourcemaps.init())
@@ -110,7 +110,7 @@ gulp.task('live',  ['browser-sync'], function() {
     // Watch scss, js, img, html files
     gulp.watch('src/assets/scss/**/*.scss', ['sass']);
     gulp.watch('src/assets/css/**/*.css', ['css']);
-    gulp.watch('src/assets/js/**/app.js', ['js-minify']);
+    gulp.watch('src/assets/js/**/*.js', ['js-minify']);
     gulp.watch('src/assets/js/**/blueimp-gallery.js', ['js-img-gallery']);
     gulp.watch('src/assets/img/**/*', ['img']);
     gulp.watch('src/**/*.html', ['html']);

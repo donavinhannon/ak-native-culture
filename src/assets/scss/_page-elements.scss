@@ -140,6 +140,11 @@
   }
 }
 
+img.lozad {
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .content-text {
   @include content-font;
   ol>li {
