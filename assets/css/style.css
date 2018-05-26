@@ -276,6 +276,11 @@
   .btn--light:hover, .btn--light:focus {
     background-color: #e6e6e6 !important; }
 
+img.lozad {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%; }
+
 .content-text {
   font-family: 'Montserrat', sans-serif; }
   .content-text ol > li {
