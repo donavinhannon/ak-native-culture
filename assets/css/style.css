@@ -329,6 +329,9 @@ img.lozad {
   padding-left: .512rem;
   padding-right: .512rem; }
 
+.share > a {
+  text-decoration: none; }
+
 button.share-icon {
   font-family: 'Montserrat', sans-serif;
   display: block;
