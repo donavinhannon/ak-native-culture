@@ -332,6 +332,9 @@ img.lozad {
 .share > a {
   text-decoration: none; }
 
+a.btn-link {
+  text-decoration: none; }
+
 button.share-icon {
   font-family: 'Montserrat', sans-serif;
   display: block;
@@ -965,7 +968,7 @@ small,
       -ms-user-select: none;
           user-select: none;
   color: #363636;
-  cursor: auto;
+  cursor: pointer;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
