@@ -200,10 +200,16 @@ img.lozad {
   padding-right: .512rem;
 }
 
-// webkit fix
+// webkit button fix
 .share > a {
   text-decoration: none;
 }
+
+a.btn-link {
+  text-decoration: none;
+}
+
+// end webkit button fix
 
 button.share-icon {
   @include content-font;
