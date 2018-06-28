@@ -178,13 +178,40 @@
                                 // Get cost of tickets
                                 var num_people = document.getElementById('numPeople').value;
                                 var ticket_cost = num_people * 50.00;
+                                var tickets = {
+                                                        name: "Calaska Culture Tickets",
+                                                        description: "Anacortes Calaska Culture Camp 2018 tickets.",
+                                                        quantity: num_people.toString(),
+                                                        price: "50",
+                                                        tax: "0.00",
+                                                        currency: "USD"
+                                                    };
 
                                 // Get cost of large drums
                                 var num_large_drums = document.getElementById('numLargeDrums').value;
                                 var drum_cost = num_large_drums * 35.00;
+                                var drums = {
+                                                    name: "Large Drum",
+                                                    description: "20\" drum instead of 12\" drum",
+                                                    quantity: num_large_drums.toString(),
+                                                    price: "35",
+                                                    tax: "0.00",
+                                                    currency: "USD"
+                                                };
 
                                 // Calculate total cost
                                 var cost = ticket_cost + drum_cost;
+
+                                // Assemble Payment Items
+                                var paymentItems = [];
+                                if (tickets.quantity !== 0) {
+                                  paymentItems.push(tickets);
+                                }
+                                if (drums.quantity > 0) {
+                                  paymentItems.push(drums);
+                                }
+
+                                console.log(paymentItems);
         
                                 // Make a call to the REST api to create the payment
                                 return actions.payment.create({
@@ -194,24 +221,7 @@
                                                 amount: { total: cost, currency: 'USD' },
                                                 description: 'Anacortes Calaska Culture Camp Tickets',
                                                 item_list: {
-                                                  items: [
-                                                    {
-                                                        name: "Calaska Culture Tickets",
-                                                        description: "Anacortes Calaska Culture Camp 2018 tickets.",
-                                                        quantity: num_people.toString(),
-                                                        price: "50",
-                                                        tax: "0.00",
-                                                        currency: "USD"
-                                                    },
-                                                    {
-                                                        name: "Large Drum",
-                                                        description: "20\" drum instead of 12\" drum",
-                                                        quantity: num_large_drums.toString(),
-                                                        price: "35",
-                                                        tax: "0.00",
-                                                        currency: "USD"
-                                                    }
-                                                  ]
+                                                  items: paymentItems
                                                 },
                                             }
                                         ]
