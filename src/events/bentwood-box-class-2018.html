@@ -183,8 +183,6 @@
                                 if (tickets.quantity !== 0) {
                                   paymentItems.push(tickets);
                                 }
-
-                                console.log(paymentItems);
         
                                 // Make a call to the REST api to create the payment
                                 return actions.payment.create({
