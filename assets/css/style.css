@@ -108,6 +108,8 @@
     text-align: center; }
   .signup__input {
     color: #E8BD2D; }
+  .signup input[type="email"] {
+    font-family: 'Montserrat', sans-serif; }
 
 .about {
   padding-bottom: 5rem; }
