@@ -103,14 +103,13 @@
 
         <!-- 2nd Upcoming -->
         <!-- Culture Camp 2019 -->
-        <div class="grid__col is-6 event animated fadeIn">
+        <div class="grid__col is-6 event animated fadeIn delay-2s">
           <h3 class="event__date">Mar 23</h3>
           <a href="#">
             <img class="media lozad" 
             sizes="(min-width: 400px) 90vw" 
-            data-srcset="/assets/img/placeholders/event-mobile.png 480w, /assets/img/placeholders/event-desktop.png 660w"
-            data-src="/assets/img/placeholders/event-desktop.png" 
-            src="/assets/img/placeholders/event-thumb.png" 
+            data-src="/assets/img/events/sccc-2018-660x330.jpg" 
+            src="/assets/img/events/sccc-2018-thumb.jpg" 
             alt="Culture Camp 2019 Event Image"/>
           </a>
           <div class="event__details-wrap">
@@ -150,13 +149,13 @@
             <p class="activity__text">A 10 inch round deerskin rawhide leather round is used to form the drum. Once the holes are pounded into the leather, round wooden frames are placed on the table to stretch the hide.  A leather lace is stretched and ready at this time to start lacing the drum together weaving in and out of the drums.</p>
           </div>
           <div class="grid__col text-center is-12--small is-4--medium is-4--large">
-            <img data-toggle-class="animated fadeIn" class="media lozad" data-src="assets/img/ccc-2017/active/drums-17.jpg" alt="Drum Picture 1">
+            <img data-toggle-class="animated fadeIn" class="media lozad" data-src="assets/img/ccc-2017/active/drums-17.jpg" src="assets/img/ccc-2017/active/drums-17-thumb.jpg" alt="Drum Picture 1">
           </div>
           <div class="grid__col text-center is-12--small is-4--medium is-4--large">
-            <img data-toggle-class="animated fadeIn" class="media lozad" data-src="assets/img/ccc-2017/active/drums-2.jpg" alt="Drum Picture 2">
+            <img data-toggle-class="animated fadeIn" class="media lozad" data-src="assets/img//activity/drum-img02.jpg" src="assets/img/activity/drum-img02-thumb.jpg" alt="Drum Picture 2">
           </div>
           <div class="grid__col text-center is-12--small is-4--medium is-4--large">
-            <img data-toggle-class="animated fadeIn" class="media lozad" data-src="assets/img/ccc-2017/active/drums-5.jpg" alt="Drum Picture 3">
+            <img data-toggle-class="animated fadeIn" class="media lozad" data-src="assets/img/ccc-2017/active/drums-5.jpg" src="assets/img/ccc-2017/active/drums-5-thumb.jpg" alt="Drum Picture 3">
           </div>
         </div>
       </div>
@@ -195,10 +194,9 @@
           <h3 class="event__date">May 27</h3>
           <a href="/events/anacortes-culture-camp-2018.html">
             <img class="media lozad"
-            sizes="(min-width: 400px) 90vw" 
-            data-srcset="/assets/img/events/sccc-2018-480x320.jpg 480w, /assets/img/events/sccc-2018-660x330.jpg 660w"
-            data-src="/assets/img/events/sccc-2018-660x330.jpg" 
-            src="/assets/img/events/sccc-2018-thumb.jpg" 
+            sizes="(min-width: 400px) 90vw"
+            data-src="/assets/img/events/anacortes-2018-desktop.jpg" 
+            src="/assets/img/events/anacortes-2018-thumb.jpg" 
             alt="Anacortes Washington Culture Camp 2018 Event Image"/>
           </a>
           <div class="event__details-wrap">
@@ -252,10 +250,15 @@
   </footer>
   
   <!-- Lazy Loading -->
+  <!-- Smoothscroll link -->
+  <script src="/assets/js/smoothscroll.min.js"></script>
   <script src="/assets/js/lozad.min.js"></script>
+
+  <!-- Initialize smoothscroll & lazyload-->
   <script>
-    var observer = lozad(); // lazy loads elements with default selector as '.lozad'
-    observer.observe();
+  var scroll = new SmoothScroll('a[href*="#"]');
+  var observer = lozad(); // lazy loads elements with default selector as '.lozad'
+  observer.observe();
   </script>
 
   <script async src="assets/js/app.min.js"></script>
