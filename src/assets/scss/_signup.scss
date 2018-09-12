@@ -13,4 +13,8 @@
   &__input {
     color: $color-secondary;
   }
+
+  input[type="email"] {
+    @include content-font;
+  }
 }
